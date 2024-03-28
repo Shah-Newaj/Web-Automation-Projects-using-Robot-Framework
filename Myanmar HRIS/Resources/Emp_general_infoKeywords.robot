@@ -22,3 +22,6 @@ Click Employment
 Click Emp_Generalinfo
     Click Element    ${empgeneralinfo}
 
+Click Family
+    Click Element    ${family}
+
