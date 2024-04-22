@@ -25,3 +25,32 @@ Click Emp_Generalinfo
 Click Family
     Click Element    ${family}
 
+Employee Id
+    Input Text    ${empid}    9988
+
+Full Name
+    Input Text    ${fullname}    Shah Newaj
+
+Full Name Burmese
+    Input Text    ${fullnamebur}    Shah Newaj
+
+Date of Birth
+    Input Text    ${dateofbirth}    24-Apr-1991
+
+Place of Birth
+    Input Text    ${placeofbirth}    Rajshahi
+
+Preferred Name
+    Input Text    ${pname}    Newaj
+
+Blood Group
+    Input Text    ${bloodgroup}     A+
+
+Gender
+    Input Text    ${gender}     Male
+
+Religion
+    Input Text    ${religion}     Islam
+
+#Click on Save
+#    Click Button    ${btn_save}

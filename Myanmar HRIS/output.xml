@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20240328 14:47:39.934" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20240421 16:34:19.235" rpa="false" schemaversion="3">
 <suite id="s1" name="AddEmpGeneralinfo" source="C:\Users\shah.newaj\PycharmProjects\Web-Automation-Projects-using-Robot-Framework\Myanmar HRIS\TestCases\AddEmpGeneralinfo.robot">
-<test id="s1-t1" name="Add Employee General Info" line="13">
+<test id="s1-t1" name="Add Employee General Info" line="14">
 <kw name="Open my browser" library="Emp_general_infoKeywords">
 <arg>${SiteUrl}</arg>
 <arg>${Browser}</arg>
@@ -9,14 +9,14 @@
 <arg>${SiteUrl}</arg>
 <arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20240328 14:47:40.187" level="INFO">Opening browser 'Chrome' to base url 'https://myanhris.scibd.info/View/EmpInfo/EmpInfo'.</msg>
-<status status="PASS" starttime="20240328 14:47:40.186" endtime="20240328 14:47:44.400"/>
+<msg timestamp="20240421 16:34:19.523" level="INFO">Opening browser 'Chrome' to base url 'https://myanhris.scibd.info'.</msg>
+<status status="PASS" starttime="20240421 16:34:19.523" endtime="20240421 16:34:23.151"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20240328 14:47:44.400" endtime="20240328 14:47:44.536"/>
+<status status="PASS" starttime="20240421 16:34:23.151" endtime="20240421 16:34:23.267"/>
 </kw>
-<status status="PASS" starttime="20240328 14:47:40.186" endtime="20240328 14:47:44.537"/>
+<status status="PASS" starttime="20240421 16:34:19.523" endtime="20240421 16:34:23.267"/>
 </kw>
 <kw name="Enter Username" library="Emp_general_infoKeywords">
 <arg>${username}</arg>
@@ -24,10 +24,10 @@
 <arg>${txt_loginUserName}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20240328 14:47:44.539" level="INFO">Typing text '123456789' into text field 'name:Email'.</msg>
-<status status="PASS" starttime="20240328 14:47:44.538" endtime="20240328 14:47:44.714"/>
+<msg timestamp="20240421 16:34:23.272" level="INFO">Typing text '123456789' into text field 'name:Email'.</msg>
+<status status="PASS" starttime="20240421 16:34:23.267" endtime="20240421 16:34:23.442"/>
 </kw>
-<status status="PASS" starttime="20240328 14:47:44.538" endtime="20240328 14:47:44.714"/>
+<status status="PASS" starttime="20240421 16:34:23.267" endtime="20240421 16:34:23.442"/>
 </kw>
 <kw name="Enter Password" library="Emp_general_infoKeywords">
 <arg>${password}</arg>
@@ -35,49 +35,95 @@
 <arg>${txt_loginPassword}</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20240328 14:47:44.715" level="INFO">Typing password into text field 'name:Password'.</msg>
-<msg timestamp="20240328 14:47:44.762" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20240328 14:47:44.827" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20240328 14:47:44.715" endtime="20240328 14:47:44.827"/>
+<msg timestamp="20240421 16:34:23.442" level="INFO">Typing password into text field 'name:Password'.</msg>
+<msg timestamp="20240421 16:34:23.486" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20240421 16:34:23.551" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20240421 16:34:23.442" endtime="20240421 16:34:23.551"/>
 </kw>
-<status status="PASS" starttime="20240328 14:47:44.714" endtime="20240328 14:47:44.827"/>
+<status status="PASS" starttime="20240421 16:34:23.442" endtime="20240421 16:34:23.551"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${btn_signIn}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20240328 14:47:44.828" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
-<status status="PASS" starttime="20240328 14:47:44.828" endtime="20240328 14:47:51.139"/>
+<msg timestamp="20240421 16:34:23.551" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
+<status status="PASS" starttime="20240421 16:34:23.551" endtime="20240421 16:34:35.597"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5 Seconds</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20240328 14:47:56.141" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20240328 14:47:51.139" endtime="20240328 14:47:56.141"/>
+<msg timestamp="20240421 16:34:40.598" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20240421 16:34:35.597" endtime="20240421 16:34:40.598"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>${family}</arg>
+<arg>${employment}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20240328 14:47:56.144" level="INFO">Clicking element 'class:kt-subheader__breadcrumbs-home '.</msg>
-<status status="PASS" starttime="20240328 14:47:56.142" endtime="20240328 14:47:56.244"/>
+<msg timestamp="20240421 16:34:40.598" level="INFO">Clicking element 'xpath://body/div[@class='kt-grid kt-grid--hor kt-grid--root']/div[@class='kt-grid__item kt-grid__item--fluid kt-grid kt-grid--ver kt-page']/div[@id='kt_wrapper']/div[@id='kt_header']/div[@class='kt-container']/div[@id='kt_header_menu_wrapper']/div[@id='kt_header_menu']/ul[@id='rf-nav']/li[@class='kt-menu__item kt-menu__item--submenu kt-menu__item--rel Employment']/a[@class='kt-menu__link kt-menu__toggle']/span[1]'.</msg>
+<status status="PASS" starttime="20240421 16:34:40.598" endtime="20240421 16:34:40.686"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${empgeneralinfo}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240421 16:34:40.686" level="INFO">Clicking element 'xpath://li[@class='kt-menu__item Employee_General_Info']//span[@id='rf-menu-text']'.</msg>
+<status status="PASS" starttime="20240421 16:34:40.686" endtime="20240421 16:34:40.761"/>
+</kw>
+<kw name="Employee Id" library="Emp_general_infoKeywords">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${empid}</arg>
+<arg>9988</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240421 16:34:40.762" level="INFO">Typing text '9988' into text field 'id:EmployeeId'.</msg>
+<msg timestamp="20240421 16:34:40.905" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-32.png"&gt;&lt;img src="selenium-screenshot-32.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240421 16:34:40.905" level="FAIL">Element with locator 'id:EmployeeId' not found.</msg>
+<status status="FAIL" starttime="20240421 16:34:40.762" endtime="20240421 16:34:40.908"/>
+</kw>
+<status status="FAIL" starttime="20240421 16:34:40.762" endtime="20240421 16:34:40.908"/>
+</kw>
+<kw name="Full Name" library="Emp_general_infoKeywords">
+<status status="NOT RUN" starttime="20240421 16:34:40.909" endtime="20240421 16:34:40.909"/>
+</kw>
+<kw name="Full Name Burmese" library="Emp_general_infoKeywords">
+<status status="NOT RUN" starttime="20240421 16:34:40.910" endtime="20240421 16:34:40.910"/>
+</kw>
+<kw name="Date of Birth" library="Emp_general_infoKeywords">
+<status status="NOT RUN" starttime="20240421 16:34:40.910" endtime="20240421 16:34:40.910"/>
+</kw>
+<kw name="Place of Birth" library="Emp_general_infoKeywords">
+<status status="NOT RUN" starttime="20240421 16:34:40.911" endtime="20240421 16:34:40.911"/>
+</kw>
+<kw name="Preferred Name" library="Emp_general_infoKeywords">
+<status status="NOT RUN" starttime="20240421 16:34:40.911" endtime="20240421 16:34:40.911"/>
+</kw>
+<kw name="Blood Group" library="Emp_general_infoKeywords">
+<status status="NOT RUN" starttime="20240421 16:34:40.912" endtime="20240421 16:34:40.912"/>
+</kw>
+<kw name="Gender" library="Emp_general_infoKeywords">
+<status status="NOT RUN" starttime="20240421 16:34:40.912" endtime="20240421 16:34:40.912"/>
+</kw>
+<kw name="Religion" library="Emp_general_infoKeywords">
+<status status="NOT RUN" starttime="20240421 16:34:40.913" endtime="20240421 16:34:40.913"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5 Seconds</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20240328 14:48:01.247" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20240328 14:47:56.246" endtime="20240328 14:48:01.247"/>
+<status status="NOT RUN" starttime="20240421 16:34:40.913" endtime="20240421 16:34:40.913"/>
 </kw>
-<status status="PASS" starttime="20240328 14:47:40.185" endtime="20240328 14:48:01.247"/>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_save}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240421 16:34:40.914" endtime="20240421 16:34:40.914"/>
+</kw>
+<status status="FAIL" starttime="20240421 16:34:19.523" endtime="20240421 16:34:40.914">Element with locator 'id:EmployeeId' not found.</status>
 </test>
-<status status="PASS" starttime="20240328 14:47:39.936" endtime="20240328 14:48:01.251"/>
+<status status="FAIL" starttime="20240421 16:34:19.251" endtime="20240421 16:34:40.915"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="AddEmpGeneralinfo">AddEmpGeneralinfo</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="AddEmpGeneralinfo">AddEmpGeneralinfo</stat>
 </suite>
 </statistics>
 <errors>
