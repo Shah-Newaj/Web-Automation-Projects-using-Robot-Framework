@@ -44,13 +44,44 @@ Preferred Name
     Input Text    ${pname}    Newaj
 
 Blood Group
-    Input Text    ${bloodgroup}     A+
+#    Input Text    ${bloodgroup}    text
+    Select From List By Label    ${bloodgroup}   O Positive
+
 
 Gender
-    Input Text    ${gender}     Male
+#    Input Text    ${gender}     Male
+    Select From List By Label    ${gender}      Male
 
 Religion
-    Input Text    ${religion}     Islam
+#    Input Text    ${religion}     Islam
+    Select From List By Label    ${religion}    Islam
 
-#Click on Save
-#    Click Button    ${btn_save}
+Passport
+    Input Text    ${passport}    123456
+
+Passport Expiry Date
+    Input Text    ${passportexpirydate}    30-Apr-2024
+
+NRC
+    Input Text    ${nrc}    654321
+
+Driving License
+    Input Text    ${drivinglicense}    9876
+
+Father's Name
+    Input Text    ${fathername}    Test Father
+
+Mother's Name
+    Input Text    ${mothername}    Test Mother
+
+Nationality
+    Input Text    ${nationality}    Bangladesh
+
+No of Children
+    Input Text    ${children}    3
+
+No of Dependant Children
+    Input Text    ${depchildren}    2
+
+No of Parents Alive
+    Input Text    ${parentsalive}    1
