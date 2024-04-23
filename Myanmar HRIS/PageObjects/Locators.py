@@ -7,6 +7,8 @@ btn_signIn = "xpath://button[@type='submit']"
 employment = "xpath://body/div[@class='kt-grid kt-grid--hor kt-grid--root']/div[@class='kt-grid__item kt-grid__item--fluid kt-grid kt-grid--ver kt-page']/div[@id='kt_wrapper']/div[@id='kt_header']/div[@class='kt-container']/div[@id='kt_header_menu_wrapper']/div[@id='kt_header_menu']/ul[@id='rf-nav']/li[@class='kt-menu__item kt-menu__item--submenu kt-menu__item--rel Employment']/a[@class='kt-menu__link kt-menu__toggle']/span[1]"
 empgeneralinfo = "xpath://li[@class='kt-menu__item Employee_General_Info']//span[@id='rf-menu-text']"
 btn_add = "xpath://span[normalize-space()='Add']"
+
+#Personal Information
 empid = "id:EmployeeId"
 fullname = "id:FullName"
 fullnamebur = "id:FullNameBur"
