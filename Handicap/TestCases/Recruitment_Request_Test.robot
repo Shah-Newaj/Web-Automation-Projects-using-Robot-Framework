@@ -22,5 +22,23 @@ Recruitment Request Handicap
     Click Hiring Manager
     Sleep    3seconds
     Click Add New
-    Sleep    3seconds
+    Set Selenium Speed    1 second
+    Project/Department
+    Name of Head of Department
+    Position Title
+    Job Description
+    Number of Positions
+    Employee at present in this company
+    Location
+    Type of Appointment
+    Job Starting date
+    Job Ending date
+    Vacancy caused due to
+    Range of Salary From
+    Type of Recruitment
+    HOD (Assign To)
+    Range of Salary To
+    Comments
+    Confirm Submit
+    Submission Check
     Close Browser
