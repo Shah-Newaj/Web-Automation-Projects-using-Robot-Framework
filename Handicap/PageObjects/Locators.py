@@ -28,6 +28,15 @@ salary_range_to = "id:salary_range_to"
 comment = "id:comments"
 save_draft = "name:save"
 confirm_submit = "name:save_and_update"
+edit = "xpath://tr[@id='38']//a[@class='edit btn btn-info btn-sm1']"
 
-
+#Approval Process Elements
+nav_hod = "link:HOD"
+nav_c_hr_manager = "link:C HR Manager"
+nav_c_f_manager = "link:C F Manager"
+c_hr_manager = "id:chrm_id"
+c_f_manager = "id:cfm_id"
+hod_i_agree = "name:hodam_status"
+chrm_i_agree = "name:chrm_status"
+cfm_i_agree = "name:cfm_status"
 

@@ -65,4 +65,31 @@ Confirm Submit
     Click Button    ${confirm_submit}
     
 Submission Check
-    Page Should Contain    Recruitment Request List            
+    Page Should Contain    Recruitment Request List
+    
+Click Nav Hod
+    Click Element    ${nav_hod}
+    
+Click Edit
+    Click Element    ${edit}
+
+C HR Manager
+    Select From List By Value    ${c_hr_manager}    1
+
+C F Manager
+    Select From List By Value    ${c_f_manager}     32
+    
+HOD I Agree
+    Select Checkbox    ${hod_i_agree}    
+    
+CLick Nav C HR Manager
+    Click Element    ${nav_c_hr_manager}
+    
+Click Nav C F Manager
+    Click Element    ${nav_c_f_manager}
+    
+CHRM I Agree
+    Select Checkbox    ${chrm_i_agree}
+    
+CFM I Agree
+    Select Checkbox    ${cfm_i_agree}                
