@@ -14,58 +14,75 @@ Click Add New
 #    Must use Element here otherwise it will not work although it's a button
 
 Project/Department
-    Select From List By Label    ${project}   MEAL
+    [Arguments]     ${arg_project}
+    Select From List By Label    ${project}   ${arg_project}
 
 Name of Head of Department
-    Input Text    ${name_of_HD}    Abdullah
+    [Arguments]     ${arg_name_of_HD}
+    Input Text    ${name_of_HD}    ${arg_name_of_HD}
 
 Position Title
-    Input Text    ${position_title}    Project Manager
+    [Arguments]     ${arg_position_title}
+    Input Text    ${position_title}    ${arg_position_title}
 
 Job Description
-    Select From List By Label    ${job_des}   Protection Officer
+    [Arguments]     ${arg_job_des}
+    Select From List By Label    ${job_des}   ${arg_job_des}
 
 Number of Positions
-    Input Text    ${number_pos}    03
+    [Arguments]     ${arg_number_pos}
+    Input Text    ${number_pos}    ${arg_number_pos}
 
 Employee at present in this company
-    Select From List By Value    ${present_employee}   Yes
+    [Arguments]     ${arg_present_employee}
+    Select From List By Value    ${present_employee}   ${arg_present_employee}
 
 Location
-    Input Text    ${location}    Rajshahi
+    [Arguments]     ${arg_location}
+    Input Text    ${location}    ${arg_location}
 
 Type of Appointment
-    Select From List By Value    ${appointment_type}    Permanent
+    [Arguments]     ${arg_appointment_type}
+    Select From List By Value    ${appointment_type}    ${arg_appointment_type}
 
 Job Starting date
-    Input Text    ${job_starting_date}    20-08-2024
+    [Arguments]     ${arg_job_starting_date}
+    Input Text    ${job_starting_date}    ${arg_job_starting_date}
 
 Job Ending date
-    Input Text    ${job_ending_date}    31-12-2025
+    [Arguments]     ${arg_job_ending_date}
+    Input Text    ${job_ending_date}    ${arg_job_ending_date}
 
 Vacancy caused due to
-    Input Text    ${vacancy_caused}    Resignation
+    [Arguments]     ${arg_vacancy_caused}
+    Input Text    ${vacancy_caused}    ${arg_vacancy_caused}
 
 Range of Salary From
-    Input Text    ${salary_range_from}    35000
+    [Arguments]     ${arg_salary_range_from}
+    Input Text    ${salary_range_from}    ${arg_salary_range_from}
 
 Type of Recruitment
-    Select From List By Label    ${recruitment_type}    External Recruitment
+    [Arguments]     ${arg_recruitment_type}
+    Select From List By Label    ${recruitment_type}    ${arg_recruitment_type}
 
 HOD (Assign To)
-    Select From List By Value    ${hod}     38
+    [Arguments]     ${arg_hod}
+    Select From List By Value    ${hod}     ${arg_hod}
 
 Range of Salary To
-    Input Text    ${salary_range_to}    45000
+    [Arguments]     ${arg_range_to}
+    Input Text    ${salary_range_to}    ${arg_range_to}
     
 Comments
-    Input Text    ${comment}    As the potential candidate are available externally, we have decided to try to find the candidate through external recruitment process first.
+    [Arguments]     ${arg_comment}
+    Input Text    ${comment}    ${arg_comment}
     
 Confirm Submit
     Click Button    ${confirm_submit}
     
 Submission Check
-    Page Should Contain    Recruitment Request List
+    [Arguments]     ${arg_submission_check}
+    Page Should Contain    ${arg_submission_check}
     
 Click Nav Hod
     Click Element    ${nav_hod}

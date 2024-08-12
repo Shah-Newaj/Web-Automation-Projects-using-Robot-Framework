@@ -25,32 +25,52 @@ Recruitment Request Handicap
     Click Hiring Manager
     Sleep    3seconds
     Click Add New
-    Project/Department
-    Name of Head of Department
-    Position Title
-    Job Description
-    Number of Positions
-    Employee at present in this company
-    Location
-    Type of Appointment
-    Job Starting date
-    Job Ending date
-    Vacancy caused due to
-    Range of Salary From
-    Type of Recruitment
-    HOD (Assign To)
-    Range of Salary To
+    Project/Department  MEAL
+    Name of Head of Department  Abdullah
+    Position Title  Project Manager
+    Job Description     Protection Officer
+    Number of Positions     03
+    Employee at present in this company     Yes
+    Location    Dhaka
+    Type of Appointment     Permanent
+    Job Starting date   20-08-2024
+    Job Ending date     31-12-2025
+    Vacancy caused due to   Resignation
+    Range of Salary From    35000
+    Type of Recruitment     External Recruitment
+    HOD (Assign To)         38
+    Range of Salary To      45000
     Scroll Element Into View    ${confirm_submit}
-    Comments
+    Comments    As the potential candidate are available externally, we have decided to try to find the candidate through external recruitment process first.
     Confirm Submit
-    Submission Check
+    Submission Check    Recruitment Request List
     Sleep    5 Seconds
-#    Close Browser
 
-#Edit Recruitment
-#    Click Edit
 
-Approval Process
+Edit Recruitment
+    Click Edit
+    Project/Department  SQA
+    Name of Head of Department  Shah Newaj
+    Position Title  SQA Automation
+    Job Description     Team Manager
+    Number of Positions     05
+    Employee at present in this company     No
+    Location    Rajshahi
+    Type of Appointment     Fixed Term
+    Job Starting date   01-01-2025
+    Job Ending date     07-08-2026
+    Vacancy caused due to   Termination
+    Range of Salary From    40000
+    Type of Recruitment     Internal Recruitment
+    HOD (Assign To)         40
+    Range of Salary To      60000
+    Scroll Element Into View    ${confirm_submit}
+    Comments    We have decided to try to find the candidate through internal recruitment process first.
+    Confirm Submit
+    Submission Check    Recruitment Request List
+    Sleep    5 Seconds
+
+HOD Approval
     Click Nav Hod
     Click Edit
     C HR Manager
@@ -60,8 +80,10 @@ Approval Process
     Sleep    3 Seconds
     Confirm Submit
     Sleep    3 Seconds
-    Submission Check
+    Submission Check    Recruitment Request List
     Sleep    3 Seconds
+
+C HR Manager Approval
     CLick Nav C HR Manager
     Click Edit
     Scroll Element Into View    ${confirm_submit}
@@ -69,8 +91,10 @@ Approval Process
     Sleep    3 Seconds
     Confirm Submit
     Sleep    3 Seconds
-    Submission Check
+    Submission Check    Recruitment Request List
     Sleep    3 Seconds
+
+C F Manager Approval
     Click Nav C F Manager
     Click Edit
     Scroll Element Into View    ${confirm_submit}
@@ -78,6 +102,6 @@ Approval Process
     Sleep    3 Seconds
     Confirm Submit
     Sleep    3 Seconds
-    Submission Check
+    Submission Check    Recruitment Request List
     Sleep    3 Seconds
     Close Browser
