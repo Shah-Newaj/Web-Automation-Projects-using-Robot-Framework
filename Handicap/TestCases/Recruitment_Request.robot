@@ -11,7 +11,7 @@ ${password}     123456
 
 
 *** Test Cases ***
-Lgin Test
+Login
     Open my browser    ${SiteUrl}  ${Browser}
     Enter Username    ${username}
     Enter Password    ${password}
@@ -20,7 +20,7 @@ Lgin Test
     Verify Successful Login
 
 
-Recruitment Request Handicap
+Recruitment Request
     Click Recruitment Request
     Click Hiring Manager
     Sleep    3seconds
