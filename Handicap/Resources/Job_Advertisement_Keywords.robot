@@ -86,9 +86,8 @@ Salary To
     [Arguments]     ${arg_salary_to}
     Input Text    ${salary_to}    ${arg_salary_to}
 
-Show Salary
-    [Arguments]     ${arg_show_salary}
-    Select Radio Button    ${show_salary_radio}    ${arg_show_salary}
+Show Salary_More
+    Click Element    ${show_salary_radio}
 
 Additional Salary
     [Arguments]     ${arg_additional_salary}
@@ -123,5 +122,110 @@ Other Benefits
     Input Text    ${other_benefits_body}    ${arg_other_benefits}
     Unselect Frame
 
-Save and Continue
-    Click Button    ${save_continue}
+Save_More_Info
+    Click Button    ${save_more}
+
+#Candidate Requirements Page Keywords
+Candidate Requirements
+    Click Element    ${tab_candidate_requirements}
+
+Educational Qualification
+    [Arguments]     ${arg_educational_qualification}
+    Input Text    ${educational_qualification}    ${arg_educational_qualification}
+
+Training/Trade Course
+    [Arguments]     ${arg_training_course}
+    Input Text    ${training_course}    ${arg_training_course}
+
+Professional Certification
+    [Arguments]     ${arg_professional_certification}
+    Input Text    ${professional_certification}    ${arg_professional_certification}
+
+Experience
+    Click Element    ${experience_status_radio}
+
+Minimum year of experience
+    [Arguments]     ${arg_min_experience}
+    Input Text    ${min_experience}    ${arg_min_experience}
+
+Maximum year of experience
+    [Arguments]     ${arg_max_experience}
+    Input Text    ${max_experience}    ${arg_max_experience}
+
+Freshers
+    Select Checkbox    ${chk_is_fresher_apply}
+
+Area of Expertise
+    [Arguments]     ${arg_expertise}
+    Select From List By Label    ${expertise}    ${arg_expertise}
+
+Skills
+    [Arguments]     ${arg_skills}
+    Select From List By Label    ${skills}    ${arg_skills}
+
+Additional Requirements
+    [Arguments]     ${arg_additional_requirements}
+    Select Frame    ${additional_requirements_ifr}
+    Input Text    ${additional_requirements_body}    ${arg_additional_requirements}
+    Unselect Frame
+
+Gender
+    Click Element    ${gender_radio}
+
+Minimum age
+    [Arguments]     ${arg_min_age}
+    Input Text    ${min_age}    ${arg_min_age}
+
+Maximum age
+    [Arguments]     ${arg_max_age}
+    Input Text    ${max_age}    ${arg_max_age}
+
+Save_Candidate
+    Click Button    ${save_continue_candidate}
+
+#Minimize Irrelevant Application Page Keywords
+Minimize Irrelevant Application
+    Click Element    ${tab_minimize_irrelevant_application}
+
+Age_Minimize
+    Select Checkbox    ${chk_age_enabled}
+
+Total Years of Experience
+    Select Checkbox    ${chk_experience_enabled}
+
+Gender_Minimize
+    Select Checkbox    ${chk_gender_enabled}
+
+Salary_Minimize
+    Select Checkbox    ${chk_salary_enabled}
+
+Job Level_Minimize
+    Select Checkbox    ${chk_job_level_enabled}
+
+Job Category_Minimize
+    Select Checkbox    ${chk_job_category_enabled}
+
+Job Type_Minimize
+    Select Checkbox    ${chk_job_type_enabled}
+
+Role Type_Minimize
+    Select Checkbox    ${chk_role_enabled}
+
+Area_Minimize
+    Select Checkbox   ${chk_headquarter_enabled}
+
+Area of Expertise_Minimize
+    Select Checkbox    ${chk_expertise_enabled}
+
+Skills_Minimize
+    Select Checkbox    ${chk_skill_enabled}
+    
+Save_Minimize
+    Click Button    ${save_continue_minimize}
+
+#Preview Page Keywords
+Preview
+    Click Element    ${tab_preview}
+    
+Save_Preview
+    Click Button    ${save_continue_preview}    
