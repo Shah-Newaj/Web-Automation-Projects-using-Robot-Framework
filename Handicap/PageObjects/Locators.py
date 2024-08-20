@@ -1,9 +1,9 @@
-#Login Page Elements
+# Login Page Elements
 txt_loginUserName = "name:username"
 txt_loginPassword = "name:password"
 btn_signIn = "xpath://button[@type='submit']"
 
-#Left Navbar Elements - Recruitment Request
+# Left Navbar Elements - Recruitment Request
 r_request = "xpath://a[normalize-space()='Recruitment Request']"
 hiring_manager = "xpath://a[normalize-space()='Hiring Manager']"
 nav_hod = "link:HOD"
@@ -12,7 +12,7 @@ nav_c_f_manager = "link:C F Manager"
 add_new = "link:Add New"
 # add_new = "xpath://a[normalize-space()='Add New']" this will also work for "Add New" button
 
-#Recruitment Request - Recruitment Request Form Page Elements
+# Recruitment Request - Recruitment Request Form Page Elements
 project = "id:department"
 name_of_HD = "id:name_of_department"
 position_title = "id:position_title"
@@ -31,23 +31,23 @@ salary_range_to = "id:salary_range_to"
 comment = "id:comments"
 save_draft = "name:save"
 confirm_submit = "name:save_and_update"
-edit = "xpath://tr[@id='70']//a[@class='edit btn btn-info btn-sm1']" #Must Change Recruitment Request ID in every run
+edit = "xpath://tr[@id='73']//a[@class='edit btn btn-info btn-sm1']" # Must Change Recruitment Request ID in every run
 
-#Recruitment Request - Approval Process Elements
+# Recruitment Request - Approval Process Elements
 c_hr_manager = "id:chrm_id"
 c_f_manager = "id:cfm_id"
 hod_i_agree = "name:hodam_status"
 chrm_i_agree = "name:chrm_status"
 cfm_i_agree = "name:cfm_status"
 
-#Left Navbar Elements - Job
+# Left Navbar Elements - Job
 job = "link:Job"
 nav_job_adv = "link:Job Advertisement"
 nav_job_restriction = "link:Job Restriction"
 
-#Job - Job Advertisement Page Elements
+# Job - Job Advertisement Page Elements
 edit_job = "xpath://tr[@id='42']//i[@class='fa fa-edit']"
-#Primary Job Information Page Elements
+# Primary Job Information Page Elements
 tab_primary_job_info = "link:Primary Job Information"
 job_request_id = "id:recruitment_id"
 job_categroy = "id:category_id"
@@ -59,7 +59,7 @@ special_instruction = "xpath://iframe[@id='special_instruction_ifr']"
 special_instruction_body = "id:tinymce"
 save = "name:save"
 
-#More Job Information Page Elements
+# More Job Information Page Elements
 tab_more_job_information = "link:More Job Information"
 job_level = "name:job_level"
 job_context_ifr = "id:job_context_ifr"
@@ -89,7 +89,7 @@ other_benefits_body = "id:tinymce"
 save_continue = "xpath://button[contains(text(),'Save')]"
 save_more = "xpath:(//button[@name='save_and_update'][normalize-space()='Save and Continue'])[2]"
 
-#Candidate Requirments Page Elements
+# Candidate Requirments Page Elements
 tab_candidate_requirements = "link:Candidate Requirements"
 educational_qualification = "id:educational_qualification"
 training_course = "id:training_course"
@@ -107,7 +107,7 @@ min_age = "id:min_age"
 max_age = "id:max_age"
 save_continue_candidate = "xpath:(//button[@name='save_and_update'][normalize-space()='Save and Continue'])[3]"
 
-#Minimize Irrelevant Application Page Elements
+# Minimize Irrelevant Application Page Elements
 tab_minimize_irrelevant_application = "link:Minimize Irrelevant Application"
 chk_age_enabled = "id:age_enabled"
 chk_experience_enabled = "id:experience_enabled"
@@ -122,12 +122,12 @@ chk_expertise_enabled = "id:expertise_enabled"
 chk_skill_enabled = "id:skill_enabled"
 save_continue_minimize = "xpath:(//button[@name='save_and_update'][normalize-space()='Save and Continue'])[4]"
 
-#Preview Page Elements
+# Preview Page Elements
 tab_preview = "link:Preview"
 save_continue_preview = "xpath:(//button[contains(@name,'save_and_update')][normalize-space()='Save and Continue'])[5]"
 
-#Job Criteria
-job_criteria = "xpath://tr[@id='56']//i[@class='fa fa fa-plus']" #Must Change id with respect to Recruitment ID number.
+# Job Criteria
+job_criteria = "xpath://tr[@id='59']//i[@class='fa fa fa-plus']" # Must Change id with respect to Recruitment ID number.
 txt_criteria_1 = "xpath:(//textarea[@id='criteria'])[1]"
 txt_point_1 = "xpath:(//input[@name='point[]'])[1]"
 criteria_status_1 = "xpath:(//select[@name='status[]'])[1]"
@@ -140,7 +140,7 @@ txt_point_3 = "xpath:(//input[@name='point[]'])[3]"
 criteria_status_3 = "xpath:(//select[@name='status[]'])[3]"
 btn_save = "name:save"
 
-#Job Restriction Page Elements
+# Job Restriction Page Elements
 job_request_id_restriction = "id:recruitment_id"
 question1 = "id:question1"
 question2 = "id:question2"
@@ -154,5 +154,5 @@ question9 = "id:question9"
 question10 = "id:question10"
 Save_continue_restriction = "xpath:(//button[normalize-space()='Save and Continue'])[1]"
 
-#Job Publish Elements
-job_publish = "xpath://tr[@id='56']//a[@class='btn btn-warning btn-sm1 status']"    #Must Focus on ID Number of the Job to be published
+# Job Publish Elements
+job_publish = "xpath://tr[@id='59']//a[@class='btn btn-warning btn-sm1 status']"    # Must Focus on ID Number of the Job to be published

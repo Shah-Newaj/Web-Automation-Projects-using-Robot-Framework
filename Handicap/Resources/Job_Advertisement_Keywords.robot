@@ -12,10 +12,6 @@ Click Job Advertisement
 Click Add New
     Click Element   ${add_new}
 
-Submission Check
-    [Arguments]     ${arg_submission_check}
-    Page Should Contain    ${arg_submission_check}
-
 
 #Primary Job Information Page Keywords
 Job Request Id

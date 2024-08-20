@@ -1,100 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.11.1 on win32)" generated="2024-08-11T12:11:24.162969" rpa="false" schemaversion="5">
-<suite id="s1" name="Recruitment Request Test" source="C:\Users\shah.newaj\PycharmProjects\Web-Automation-Projects-using-Robot-Framework\Handicap\TestCases\Recruitment_Request_Test.robot">
-<test id="s1-t1" name="Recruitment Request Handicap" line="23">
-<kw name="Click Recruitment Request" owner="Recruitment_Request_Keywords">
+<robot generator="Robot 7.0.1 (Python 3.11.1 on win32)" generated="2024-08-20T21:14:36.638525" rpa="false" schemaversion="5">
+<suite id="s1" name="Job Publish" source="C:\Users\shah.newaj\PycharmProjects\Web-Automation-Projects-using-Robot-Framework\Handicap\TestCases\Job_Publish.robot">
+<test id="s1-t1" name="Criteria" line="192">
+<kw name="Click Job" owner="Job_Advertisement_Keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-08-11T12:11:24.527034" level="INFO">Clicking element 'xpath://a[normalize-space()='Recruitment Request']'.</msg>
-<msg time="2024-08-11T12:11:24.527034" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2024-08-11T12:11:24.527034" level="FAIL">No browser is open.</msg>
-<arg>${r_request}</arg>
+<msg time="2024-08-20T21:14:37.566209" level="INFO">Clicking element 'link:Job'.</msg>
+<msg time="2024-08-20T21:14:37.576378" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-08-20T21:14:37.576378" level="FAIL">No browser is open.</msg>
+<arg>${job}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2024-08-11T12:11:24.527034" elapsed="0.000000">No browser is open.</status>
+<status status="FAIL" start="2024-08-20T21:14:37.560433" elapsed="0.038039">No browser is open.</status>
 </kw>
-<status status="FAIL" start="2024-08-11T12:11:24.527034" elapsed="0.000000">No browser is open.</status>
+<status status="FAIL" start="2024-08-20T21:14:37.560433" elapsed="0.038039">No browser is open.</status>
 </kw>
-<kw name="Click Hiring Manager" owner="Recruitment_Request_Keywords">
-<status status="NOT RUN" start="2024-08-11T12:11:24.527034" elapsed="0.000000"/>
+<kw name="Click Job Advertisement" owner="Job_Advertisement_Keywords">
+<status status="NOT RUN" start="2024-08-20T21:14:37.600740" elapsed="0.000000"/>
+</kw>
+<kw name="Click Criteria" owner="Job_Advertisement_Keywords">
+<status status="NOT RUN" start="2024-08-20T21:14:37.601917" elapsed="0.000000"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<arg>3seconds</arg>
+<arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2024-08-11T12:11:24.527034" elapsed="0.015640"/>
+<status status="NOT RUN" start="2024-08-20T21:14:37.601917" elapsed="0.000000"/>
 </kw>
-<kw name="Click Add New" owner="Recruitment_Request_Keywords">
-<status status="NOT RUN" start="2024-08-11T12:11:24.542674" elapsed="0.000000"/>
+<kw name="Criteria 1" owner="Job_Advertisement_Keywords">
+<arg>Technical Interview</arg>
+<status status="NOT RUN" start="2024-08-20T21:14:37.601917" elapsed="0.000000"/>
 </kw>
-<kw name="Project/Department" owner="Recruitment_Request_Keywords">
-<status status="NOT RUN" start="2024-08-11T12:11:24.542674" elapsed="0.000000"/>
+<kw name="Point 1" owner="Job_Advertisement_Keywords">
+<arg>5</arg>
+<status status="NOT RUN" start="2024-08-20T21:14:37.601917" elapsed="0.000000"/>
 </kw>
-<kw name="Name of Head of Department" owner="Recruitment_Request_Keywords">
-<status status="NOT RUN" start="2024-08-11T12:11:24.542674" elapsed="0.000000"/>
+<kw name="Status 1" owner="Job_Advertisement_Keywords">
+<arg>Mandatory</arg>
+<status status="NOT RUN" start="2024-08-20T21:14:37.607441" elapsed="0.000518"/>
 </kw>
-<kw name="Position Title" owner="Recruitment_Request_Keywords">
-<status status="NOT RUN" start="2024-08-11T12:11:24.542674" elapsed="0.000000"/>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-08-20T21:14:37.607959" elapsed="0.000000"/>
 </kw>
-<kw name="Job Description" owner="Recruitment_Request_Keywords">
-<status status="NOT RUN" start="2024-08-11T12:11:24.542674" elapsed="0.000000"/>
+<kw name="Add Row" owner="Job_Advertisement_Keywords">
+<status status="NOT RUN" start="2024-08-20T21:14:37.607959" elapsed="0.000000"/>
 </kw>
-<kw name="Number of Positions" owner="Recruitment_Request_Keywords">
-<status status="NOT RUN" start="2024-08-11T12:11:24.542674" elapsed="0.000000"/>
+<kw name="Criteria 2" owner="Job_Advertisement_Keywords">
+<arg>Written Exam</arg>
+<status status="NOT RUN" start="2024-08-20T21:14:37.607959" elapsed="0.000000"/>
 </kw>
-<kw name="Employee at present in this company" owner="Recruitment_Request_Keywords">
-<status status="NOT RUN" start="2024-08-11T12:11:24.542674" elapsed="0.000000"/>
+<kw name="Point 2" owner="Job_Advertisement_Keywords">
+<arg>3</arg>
+<status status="NOT RUN" start="2024-08-20T21:14:37.611016" elapsed="0.000000"/>
 </kw>
-<kw name="Location" owner="Recruitment_Request_Keywords">
-<status status="NOT RUN" start="2024-08-11T12:11:24.542674" elapsed="0.000000"/>
+<kw name="Status 2" owner="Job_Advertisement_Keywords">
+<arg>Mandatory</arg>
+<status status="NOT RUN" start="2024-08-20T21:14:37.611016" elapsed="0.002166"/>
 </kw>
-<kw name="Type of Appointment" owner="Recruitment_Request_Keywords">
-<status status="NOT RUN" start="2024-08-11T12:11:24.542674" elapsed="0.000000"/>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-08-20T21:14:37.613699" elapsed="0.000000"/>
 </kw>
-<kw name="Job Starting date" owner="Recruitment_Request_Keywords">
-<status status="NOT RUN" start="2024-08-11T12:11:24.542674" elapsed="0.000000"/>
+<kw name="Add Row" owner="Job_Advertisement_Keywords">
+<status status="NOT RUN" start="2024-08-20T21:14:37.613699" elapsed="0.000000"/>
 </kw>
-<kw name="Job Ending date" owner="Recruitment_Request_Keywords">
-<status status="NOT RUN" start="2024-08-11T12:11:24.542674" elapsed="0.000000"/>
+<kw name="Criteria 3" owner="Job_Advertisement_Keywords">
+<arg>HR Interview</arg>
+<status status="NOT RUN" start="2024-08-20T21:14:37.614862" elapsed="0.000000"/>
 </kw>
-<kw name="Vacancy caused due to" owner="Recruitment_Request_Keywords">
-<status status="NOT RUN" start="2024-08-11T12:11:24.542674" elapsed="0.000000"/>
+<kw name="Point 3" owner="Job_Advertisement_Keywords">
+<arg>2</arg>
+<status status="NOT RUN" start="2024-08-20T21:14:37.614862" elapsed="0.000000"/>
 </kw>
-<kw name="Range of Salary From" owner="Recruitment_Request_Keywords">
-<status status="NOT RUN" start="2024-08-11T12:11:24.542674" elapsed="0.000000"/>
+<kw name="Status 3" owner="Job_Advertisement_Keywords">
+<arg>Optional</arg>
+<status status="NOT RUN" start="2024-08-20T21:14:37.616878" elapsed="0.000000"/>
 </kw>
-<kw name="Type of Recruitment" owner="Recruitment_Request_Keywords">
-<status status="NOT RUN" start="2024-08-11T12:11:24.542674" elapsed="0.000000"/>
+<kw name="Save_Criteria" owner="Job_Advertisement_Keywords">
+<status status="NOT RUN" start="2024-08-20T21:14:37.618427" elapsed="0.000000"/>
 </kw>
-<kw name="HOD (Assign To)" owner="Recruitment_Request_Keywords">
-<status status="NOT RUN" start="2024-08-11T12:11:24.542674" elapsed="0.000000"/>
-</kw>
-<kw name="Range of Salary To" owner="Recruitment_Request_Keywords">
-<status status="NOT RUN" start="2024-08-11T12:11:24.542674" elapsed="0.000000"/>
-</kw>
-<kw name="Scroll Element Into View" owner="SeleniumLibrary">
-<arg>${confirm_submit}</arg>
-<doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="NOT RUN" start="2024-08-11T12:11:24.542674" elapsed="0.000000"/>
-</kw>
-<kw name="Comments" owner="Recruitment_Request_Keywords">
-<status status="NOT RUN" start="2024-08-11T12:11:24.542674" elapsed="0.000000"/>
-</kw>
-<kw name="Confirm Submit" owner="Recruitment_Request_Keywords">
-<status status="NOT RUN" start="2024-08-11T12:11:24.542674" elapsed="0.000000"/>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-08-20T21:14:37.618427" elapsed="0.003142"/>
 </kw>
 <kw name="Submission Check" owner="Recruitment_Request_Keywords">
-<status status="NOT RUN" start="2024-08-11T12:11:24.542674" elapsed="0.000000"/>
+<arg>Job Advertisement List</arg>
+<status status="NOT RUN" start="2024-08-20T21:14:37.621569" elapsed="0.002051"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<arg>5 Seconds</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2024-08-11T12:11:24.542674" elapsed="0.000000"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2024-08-11T12:11:24.542674" elapsed="0.000000"/>
-</kw>
-<status status="FAIL" start="2024-08-11T12:11:24.527034" elapsed="0.015640">No browser is open.</status>
+<status status="FAIL" start="2024-08-20T21:14:37.555628" elapsed="0.069064">No browser is open.</status>
 </test>
-<status status="FAIL" start="2024-08-11T12:11:24.178606" elapsed="0.370583"/>
+<status status="FAIL" start="2024-08-20T21:14:36.650728" elapsed="0.975237"/>
 </suite>
 <statistics>
 <total>
@@ -103,7 +99,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Recruitment Request Test">Recruitment Request Test</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Job Publish">Job Publish</stat>
 </suite>
 </statistics>
 <errors>
