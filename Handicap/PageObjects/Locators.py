@@ -31,7 +31,7 @@ salary_range_to = "id:salary_range_to"
 comment = "id:comments"
 save_draft = "name:save"
 confirm_submit = "name:save_and_update"
-edit = "xpath://tr[@id='64']//a[@class='edit btn btn-info btn-sm1']" #Must Change Recruitment Request ID in every run
+edit = "xpath://tr[@id='70']//a[@class='edit btn btn-info btn-sm1']" #Must Change Recruitment Request ID in every run
 
 #Recruitment Request - Approval Process Elements
 c_hr_manager = "id:chrm_id"
@@ -125,3 +125,34 @@ save_continue_minimize = "xpath:(//button[@name='save_and_update'][normalize-spa
 #Preview Page Elements
 tab_preview = "link:Preview"
 save_continue_preview = "xpath:(//button[contains(@name,'save_and_update')][normalize-space()='Save and Continue'])[5]"
+
+#Job Criteria
+job_criteria = "xpath://tr[@id='56']//i[@class='fa fa fa-plus']" #Must Change id with respect to Recruitment ID number.
+txt_criteria_1 = "xpath:(//textarea[@id='criteria'])[1]"
+txt_point_1 = "xpath:(//input[@name='point[]'])[1]"
+criteria_status_1 = "xpath:(//select[@name='status[]'])[1]"
+btn_add_row = "id:add-row-btn"
+txt_criteria_2 = "xpath:(//textarea[@id='criteria'])[2]"
+txt_point_2 = "xpath:(//input[@name='point[]'])[2]"
+criteria_status_2 = "xpath:(//select[@name='status[]'])[2]"
+txt_criteria_3 = "xpath:(//textarea[@id='criteria'])[3]"
+txt_point_3 = "xpath:(//input[@name='point[]'])[3]"
+criteria_status_3 = "xpath:(//select[@name='status[]'])[3]"
+btn_save = "name:save"
+
+#Job Restriction Page Elements
+job_request_id_restriction = "id:recruitment_id"
+question1 = "id:question1"
+question2 = "id:question2"
+question3 = "id:question3"
+question4 = "id:question4"
+question5 = "id:question5"
+question6 = "id:question6"
+question7 = "id:question7"
+question8 = "id:question8"
+question9 = "id:question9"
+question10 = "id:question10"
+Save_continue_restriction = "xpath:(//button[normalize-space()='Save and Continue'])[1]"
+
+#Job Publish Elements
+job_publish = "xpath://tr[@id='56']//a[@class='btn btn-warning btn-sm1 status']"    #Must Focus on ID Number of the Job to be published

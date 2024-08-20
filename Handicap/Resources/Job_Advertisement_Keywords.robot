@@ -12,6 +12,11 @@ Click Job Advertisement
 Click Add New
     Click Element   ${add_new}
 
+Submission Check
+    [Arguments]     ${arg_submission_check}
+    Page Should Contain    ${arg_submission_check}
+
+
 #Primary Job Information Page Keywords
 Job Request Id
     [Arguments]     ${arg_job_request_id}
@@ -45,6 +50,7 @@ Special Instruction
 
 Save
     Click Button    ${save}
+
 
 #More Job Information Page Keywords
 More Job Information
@@ -125,6 +131,7 @@ Other Benefits
 Save_More_Info
     Click Button    ${save_more}
 
+
 #Candidate Requirements Page Keywords
 Candidate Requirements
     Click Element    ${tab_candidate_requirements}
@@ -183,6 +190,7 @@ Maximum age
 Save_Candidate
     Click Button    ${save_continue_candidate}
 
+
 #Minimize Irrelevant Application Page Keywords
 Minimize Irrelevant Application
     Click Element    ${tab_minimize_irrelevant_application}
@@ -223,9 +231,112 @@ Skills_Minimize
 Save_Minimize
     Click Button    ${save_continue_minimize}
 
+
 #Preview Page Keywords
 Preview
     Click Element    ${tab_preview}
     
 Save_Preview
-    Click Button    ${save_continue_preview}    
+    Click Button    ${save_continue_preview}
+
+
+#Criteria Page Keywords
+Click Criteria
+    Click Element    ${job_criteria}
+
+Criteria 1
+    [Arguments]     ${arg_criteria_1}
+    Input Text    ${txt_criteria_1}    ${arg_criteria_1}
+
+Point 1
+    [Arguments]     ${arg_point_1}
+    Input Text    ${txt_point_1}    ${arg_point_1}
+
+Status 1
+    [Arguments]     ${arg_criteria_status_1}
+    Select From List By Label    ${criteria_status_1}   ${arg_criteria_status_1}
+
+Criteria 2
+    [Arguments]     ${arg_criteria_2}
+    Input Text    ${txt_criteria_2}    ${arg_criteria_2}
+
+Point 2
+    [Arguments]     ${arg_point_2}
+    Input Text    ${txt_point_2}    ${arg_point_2}
+
+Status 2
+    [Arguments]     ${arg_criteria_status_2}
+    Select From List By Label    ${criteria_status_2}   ${arg_criteria_status_2}
+
+Criteria 3
+    [Arguments]     ${arg_criteria_3}
+    Input Text    ${txt_criteria_3}    ${arg_criteria_3}
+
+Point 3
+    [Arguments]     ${arg_point_3}
+    Input Text    ${txt_point_3}    ${arg_point_3}
+
+Status 3
+    [Arguments]     ${arg_criteria_status_3}
+    Select From List By Label    ${criteria_status_3}   ${arg_criteria_status_3}
+
+Add Row
+    Click Button    ${btn_add_row}
+
+Save_Criteria
+    Click Button    ${btn_save}
+
+#Job Restriction Page Keywords
+Click Job Restriction
+    Click Element    ${nav_job_restriction}
+
+Job Request Id - Restriction
+    [Arguments]     ${arg_job_request_id_restriction}
+    Select From List By Label    ${job_request_id_restriction}   ${arg_job_request_id_restriction}
+
+Question 1
+    [Arguments]     ${arg_question1}
+    Input Text    ${question1}    ${arg_question1}
+
+Question 2
+    [Arguments]     ${arg_question2}
+    Input Text    ${question2}    ${arg_question2}
+
+Question 3
+    [Arguments]     ${arg_question3}
+    Input Text    ${question3}    ${arg_question3}
+
+Question 4
+    [Arguments]     ${arg_question4}
+    Input Text    ${question4}    ${arg_question4}
+
+Question 5
+    [Arguments]     ${arg_question5}
+    Input Text    ${question5}    ${arg_question5}
+
+Question 6
+    [Arguments]     ${arg_question6}
+    Input Text    ${question6}    ${arg_question6}
+
+Question 7
+    [Arguments]     ${arg_question7}
+    Input Text    ${question7}    ${arg_question7}
+
+Question 8
+    [Arguments]     ${arg_question8}
+    Input Text    ${question8}    ${arg_question8}
+
+Question 9
+    [Arguments]     ${arg_question9}
+    Input Text    ${question9}    ${arg_question9}
+
+Question 10
+    [Arguments]     ${arg_question10}
+    Input Text    ${question10}    ${arg_question10}
+
+Save_Continue_Restriction
+    Click Button    ${Save_continue_restriction}
+
+#Job Publish Keywords
+Click Job Publish
+    Click Element    ${job_publish}

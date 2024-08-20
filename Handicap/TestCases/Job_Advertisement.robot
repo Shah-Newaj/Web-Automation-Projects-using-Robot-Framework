@@ -24,7 +24,7 @@ Job Advertisement
     Click Job Advertisement
     Click Add New
 Primary Job Information
-    Job Request Id    1163  #Must Change ID in Every Run
+    Job Request Id    1170  #Must Change ID in Every Run
     Job Category    Technical
     Job Type    Contractual
     Role Type    Intern
@@ -101,3 +101,49 @@ Preview
     Scroll Element Into View    link:Handicap International
     Sleep    3s
     Save_Preview    
+
+Criteria
+    Click Job
+    Click Job Advertisement
+    Click Criteria
+    Sleep    5s
+    Criteria 1    Technical Interview
+    Point 1    5
+    Status 1    Mandatory
+    Sleep    2s
+    Add Row
+    Criteria 2    Written Exam
+    Point 2    3
+    Status 2    Mandatory
+    Sleep    2s
+    Add Row
+    Criteria 3    HR Interview
+    Point 3    2
+    Status 3    Optional
+    Save_Criteria
+    Sleep    3s
+    Submission Check    Job Advertisement List
+
+Job Restriction
+#    Click Job
+    Click Job Restriction
+    Click Add New
+    Job Request Id - Restriction    1170
+    Question 1    Test Question 1
+    Question 2    Test Question 2
+    Question 3    Test Question 3
+    Question 4    Test Question 4
+    Question 5    Test Question 5
+    Question 6    Test Question 6
+    Question 7    Test Question 7
+    Question 8    Test Question 8
+    Question 9    Test Question 9
+    Question 10    Test Question 10
+    Sleep    3s
+    Save_Continue_Restriction
+    Sleep    3s
+    Submission Check    Job Restriction Question List
+
+Job Publish
+    Click Job Advertisement
+    Click Job Publish
