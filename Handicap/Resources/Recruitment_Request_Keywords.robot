@@ -94,7 +94,7 @@ C HR Manager
     Select From List By Value    ${c_hr_manager}    1
 
 C F Manager
-    Select From List By Value    ${c_f_manager}     32
+    Select From List By Value    ${c_f_manager}     9
     
 HOD I Agree
     Select Checkbox    ${hod_i_agree}    

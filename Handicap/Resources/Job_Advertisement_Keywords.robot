@@ -1,5 +1,6 @@
 *** Settings ***
 Library     SeleniumLibrary
+Library    DateTime
 Variables   ../PageObjects/Locators.py
 
 *** Keywords ***
@@ -37,6 +38,7 @@ Published date
 Application deadline
     [Arguments]     ${arg_application_deadline}
     Input Text    ${application_deadline}    ${arg_application_deadline}
+#    Get Current Date
 
 Special Instruction
     [Arguments]     ${arg_sp_instruction}
@@ -336,3 +338,11 @@ Save_Continue_Restriction
 #Job Publish Keywords
 Click Job Publish
     Click Element    ${job_publish}
+    
+#Applicant Site Home Page Keywords
+Text in Searchbox
+    [Arguments]     ${arg_searchbox_txt}
+    Input Text    ${search_txt}    ${arg_searchbox_txt}
+    
+Click Search
+    Click Button    ${Search_btn}    

@@ -5,10 +5,11 @@ Resource    ../Resources/Recruitment_Request_Keywords.robot
 Resource    ../Resources/Job_Advertisement_Keywords.robot
 
 *** Variables ***
-${SiteUrl}      https://jobs.hi-bd.org/admin/login
+${SiteUrl}      https://test.jobs.hi-bd.org/admin/login
 ${Browser}      Chrome
 ${username}     admin
 ${password}     123456
+#${aplcnt_pos_title}     ${position_title}
 
 
 *** Test Cases ***
@@ -29,7 +30,7 @@ Recruitment Request
     Project/Department  MEAL
     Name of Head of Department  Abdullah
     Position Title  Project Manager
-    Job Description     Protection Officer
+    Job Description     Supply Chain Officer
     Number of Positions     03
     Employee at present in this company     Yes
     Location    Dhaka
@@ -39,7 +40,7 @@ Recruitment Request
     Vacancy caused due to   Resignation
     Range of Salary From    35000
     Type of Recruitment     External Recruitment
-    HOD (Assign To)         38
+    HOD (Assign To)         1
     Range of Salary To      45000
     Scroll Element Into View    ${confirm_submit}
     Comments    As the potential candidate are available externally, we have decided to try to find the candidate through external recruitment process first.
@@ -52,8 +53,8 @@ Edit Recruitment
     Click Edit
     Project/Department  SQA
     Name of Head of Department  Shah Newaj
-    Position Title  SQA Automation 2
-    Job Description     Team Manager
+    Position Title  SQA Automation 4
+    Job Description     Education Program Coordinator
     Number of Positions     05
     Employee at present in this company     No
     Location    Rajshahi
@@ -63,7 +64,7 @@ Edit Recruitment
     Vacancy caused due to   Termination
     Range of Salary From    40000
     Type of Recruitment     Internal Recruitment
-    HOD (Assign To)         40
+    HOD (Assign To)         9
     Range of Salary To      60000
     Scroll Element Into View    ${confirm_submit}
     Comments    We have decided to try to find the candidate through internal recruitment process first.
@@ -111,12 +112,12 @@ Job Advertisement
     Click Job Advertisement
     Job_Advertisement_Keywords.Click Add New
 Primary Job Information
-    Job Request Id    1175  #Must Change ID in Every Run
+    Job Request Id    1090  #Must Change ID in Every Run
     Job Category    Technical
     Job Type    Contractual
     Role Type    Intern
-    Published date    13-08-2024
-    Application deadline    20-08-2024
+    Published date    18-08-2024
+    Application deadline    25-08-2024
     Scroll Element Into View    ${save}
     Special Instruction    This is Special Instruction for Job seekers. You need to complete daily task.
     Sleep    3 Seconds
@@ -215,7 +216,7 @@ Job Restriction
 #    Click Job
     Click Job Restriction
     Job_Advertisement_Keywords.Click Add New
-    Job Request Id - Restriction    1175
+    Job Request Id - Restriction    1090
     Question 1    Test Question 1
     Question 2    Test Question 2
     Question 3    Test Question 3
@@ -234,3 +235,12 @@ Job Restriction
 Job Publish
     Click Job Advertisement
     Click Job Publish
+    
+Check Published Job
+    Go To    https://test.jobs.hi-bd.org/
+    Input Text    ${search_txt}    SQA Automation 4     #Must change according to Job Position Title
+    Sleep    3s
+    Click Button    ${search_btn}
+    Sleep    5s
+    Page Should Contain    SQA Automation 4
+    Sleep    3s
