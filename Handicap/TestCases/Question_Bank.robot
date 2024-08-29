@@ -53,13 +53,14 @@ Written Test
     Title    Written Test of Question Bank
     Note    Written Test Note
     Written Test Job Category    MEAL
-    Job Posting    Senior Accountability Officer
+    Job Posting    Senior Accountability Officer    #will not work if written test already created using this Name
     Eligibility    100%
     Question Set    Sr. Accountability Officer Technical Written Test
     Exam Duration    60
     Start Date    30-08-2024
     End Date    30-08-2024
     Click Save
+
 
 Interview
     Click Interview
