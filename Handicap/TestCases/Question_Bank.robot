@@ -22,7 +22,7 @@ Login
     Verify Successful Login
 
 Question Creation
-    Set Selenium Speed    1 seconds
+#    Set Selenium Speed    1 seconds
     Click Question Bank
     Click Question Create
     Click Add New
@@ -33,9 +33,9 @@ Question Creation
     Scroll Element Into View    ${btn_save}
     Question Quiz Option 1    Quiz Option 1
     Question Quiz Option 2    Quiz Option 2
+    Click Save
 
 Quiz Generate
-    Click Question Bank
     Click Quiz Generate
     Click Add New
     Title    Test Quiz implementation
@@ -45,9 +45,9 @@ Quiz Generate
     Scroll Element Into View    ${btn_save}
     Select Question 1    50
     Select Question 2    50
+    Click Save
 
 Written Test
-    Click Question Bank
     Click Written Test
     Click Add New
     Title    Written Test of Question Bank
@@ -59,9 +59,9 @@ Written Test
     Exam Duration    60
     Start Date    30-08-2024
     End Date    30-08-2024
+    Click Save
 
 Interview
-    Click Question Bank
     Click Interview
     Click Add New
     Title    Interview Question of Question Bank
@@ -75,3 +75,4 @@ Interview
     Scroll Element Into View    ${btn_save}
     Select Question 1    45
     Select Question 2    45
+    Click Save
