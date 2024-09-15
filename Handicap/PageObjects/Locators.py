@@ -31,7 +31,7 @@ salary_range_to = "id:salary_range_to"
 comment = "id:comments"
 save_draft = "name:save"
 confirm_submit = "name:save_and_update"
-edit = "xpath://tr[@id='33']//i[@class='fa fa-edit']" # Must Change Recruitment Request ID in every run
+edit = "xpath:(//i[@class='fa fa-edit'])[1]" # Must Change Recruitment Request ID in every run another xpath = //tr[@id='33']//i[@class='fa fa-edit']
 
 # Recruitment Request - Approval Process Elements
 c_hr_manager = "id:chrm_id"
@@ -127,7 +127,7 @@ tab_preview = "link:Preview"
 save_continue_preview = "xpath:(//button[contains(@name,'save_and_update')][normalize-space()='Save and Continue'])[5]"
 
 # Job Criteria
-job_criteria = "xpath://tr[@id='16']//i[@class='fa fa fa-plus']" # Must Change id with respect to Recruitment ID number.
+job_criteria = "xpath:(//i[@class='fa fa fa-plus'])[1]" # Must Change id with respect to Recruitment ID number. another xpath =  //tr[@id='16']//i[@class='fa fa fa-plus']
 txt_criteria_1 = "xpath:(//textarea[@id='criteria'])[1]"
 txt_point_1 = "xpath:(//input[@name='point[]'])[1]"
 criteria_status_1 = "xpath:(//select[@name='status[]'])[1]"
@@ -155,7 +155,7 @@ question10 = "id:question10"
 Save_continue_restriction = "xpath:(//button[normalize-space()='Save and Continue'])[1]"
 
 # Job Publish Elements
-job_publish = "xpath://tr[@id='16']//a[@class='btn btn-warning btn-sm1 status']"    # Must Focus on ID Number of the Job to be published
+job_publish = "xpath:(//a[@class='btn btn-warning btn-sm1 status'])[1]"    # Must Focus on ID Number of the Job to be published another xpath = //tr[@id='16']//a[@class='btn btn-warning btn-sm1 status']
 
 #Applicant Site Home Page Elements
 search_txt = "xpath:(//input[@id='job_search_keyword'])[1]"

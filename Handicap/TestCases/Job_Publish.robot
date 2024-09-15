@@ -195,17 +195,17 @@ Criteria
     Click Job Advertisement
     Click Criteria
     Sleep    5s
-    Criteria 1    Technical Interview
+    Criteria 1    Technical Interview full automation
     Point 1    5
     Status 1    Mandatory
     Sleep    2s
     Add Row
-    Criteria 2    Written Exam
+    Criteria 2    Written Exam full automation
     Point 2    3
     Status 2    Mandatory
     Sleep    2s
     Add Row
-    Criteria 3    HR Interview
+    Criteria 3    HR Interview full automation
     Point 3    2
     Status 3    Optional
     Save_Criteria
