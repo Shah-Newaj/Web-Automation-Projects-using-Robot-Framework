@@ -10,15 +10,6 @@ python 3.11
 robot framework 7.0.1
 
 Need to change in the code to "Job Publish"
-go to PageObject then open Locators.py file,
-in Recruitment Request - Recruitment Request Form Page Elements,
-change the xpath value of "edit" variable.
-
-in Job Criteria page elements,
-change the xpath value of "job_criteria" variable.
-
-in Job Publish Elements,
-change the xpath value of "job_publish" variable.
 
 go to TestCases then open Job_Publish.robot file,
 in Job Restriction,
