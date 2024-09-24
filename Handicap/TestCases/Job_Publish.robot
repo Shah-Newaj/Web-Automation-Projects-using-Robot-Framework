@@ -117,7 +117,7 @@ Primary Job Information
     Job Type    Contractual
     Role Type    Intern
     Published date    18-08-2024
-    Application deadline    30-08-2024
+    Application deadline    30-08-2026
     Scroll Element Into View    ${save}
     Special Instruction    This is Special Instruction for Job seekers. You need to complete daily task.
     Sleep    3 Seconds
