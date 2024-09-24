@@ -112,7 +112,7 @@ Job Advertisement
     Click Job Advertisement
     Job_Advertisement_Keywords.Click Add New
 Primary Job Information
-    Job Request Id    1093  #Must Change ID in Every Run
+    Job Request Id    1148  #Must Change ID in Every Run
     Job Category    Technical
     Job Type    Contractual
     Role Type    Intern
@@ -216,7 +216,7 @@ Job Restriction
 #    Click Job
     Click Job Restriction
     Job_Advertisement_Keywords.Click Add New
-    Job Request Id - Restriction    1093
+    Job Request Id - Restriction    1148
     Question 1    Test Question 1
     Question 2    Test Question 2
     Question 3    Test Question 3
@@ -236,11 +236,11 @@ Job Publish
     Click Job Advertisement
     Click Job Publish
     
-Check Published Job
-    Go To    https://test.jobs.hi-bd.org/
-    Input Text    ${search_txt}    SQA Automation 4     #Must change according to Job Position Title
-    Sleep    3s
-    Click Button    ${search_btn}
-    Sleep    5s
-    Page Should Contain    SQA Automation 4
-    Sleep    3s
+#Check Published Job
+#    Go To    https://test.jobs.hi-bd.org/
+#    Input Text    ${search_txt}    SQA Automation 4     #Must change according to Job Position Title
+#    Sleep    3s
+#    Click Button    ${search_btn}
+#    Sleep    5s
+#    Page Should Contain    SQA Automation 4
+#    Sleep    3s

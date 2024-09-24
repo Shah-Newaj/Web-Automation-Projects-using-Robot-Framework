@@ -1,295 +1,1929 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.11.1 on win32)" generated="2024-09-15T22:33:04.629756" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0.1 (Python 3.11.1 on win32)" generated="2024-09-24T10:09:12.623319" rpa="false" schemaversion="5">
 <suite id="s1" name="Job Publish" source="C:\Users\shah.newaj\PycharmProjects\Web-Automation-Projects-using-Robot-Framework\Handicap\TestCases\Job_Publish.robot">
 <test id="s1-t1" name="Login" line="16">
 <kw name="Open my browser" owner="Login_Keywords">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-09-15T22:33:04.912485" level="INFO">Opening browser 'Chrome' to base url 'https://test.jobs.hi-bd.org/admin/login'.</msg>
+<msg time="2024-09-24T10:09:13.129438" level="INFO">Opening browser 'Chrome' to base url 'https://test.jobs.hi-bd.org/admin/login'.</msg>
+<msg time="2024-09-24T10:09:16.516896" level="WARN">The chromedriver version (128.0.6613.84) detected in PATH at C:\Users\shah.newaj\AppData\Local\Programs\Python\Python311\Scripts\chromedriver.exe might not be compatible with the detected chrome version (129.0.6668.59); currently, chromedriver 129.0.6668.58 is recommended for chrome 129.*, so it is advised to delete the driver in PATH and retry</msg>
 <arg>${SiteUrl}</arg>
 <arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-09-15T22:33:04.912485" elapsed="13.636151"/>
+<status status="PASS" start="2024-09-24T10:09:13.129438" elapsed="10.334263"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-09-15T22:33:18.548636" elapsed="0.042872"/>
+<status status="PASS" start="2024-09-24T10:09:23.463701" elapsed="0.040583"/>
 </kw>
 <arg>${SiteUrl}</arg>
 <arg>${Browser}</arg>
-<status status="PASS" start="2024-09-15T22:33:04.912485" elapsed="13.679023"/>
+<status status="PASS" start="2024-09-24T10:09:13.129438" elapsed="10.374846"/>
 </kw>
 <kw name="Enter Username" owner="Login_Keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-09-15T22:33:18.593105" level="INFO">Typing text 'admin' into text field 'name:username'.</msg>
+<msg time="2024-09-24T10:09:23.505125" level="INFO">Typing text 'admin' into text field 'name:username'.</msg>
 <arg>${txt_loginUserName}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-15T22:33:18.593105" elapsed="0.177918"/>
+<status status="PASS" start="2024-09-24T10:09:23.505125" elapsed="0.173724"/>
 </kw>
 <arg>${username}</arg>
-<status status="PASS" start="2024-09-15T22:33:18.592513" elapsed="0.178799"/>
+<status status="PASS" start="2024-09-24T10:09:23.505125" elapsed="0.173724"/>
 </kw>
 <kw name="Enter Password" owner="Login_Keywords">
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2024-09-15T22:33:18.771312" level="INFO">Typing password into text field 'name:password'.</msg>
-<msg time="2024-09-15T22:33:18.821090" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2024-09-24T10:09:23.681351" level="INFO">Typing password into text field 'name:password'.</msg>
+<msg time="2024-09-24T10:09:23.746840" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>${txt_loginPassword}</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-15T22:33:18.771312" elapsed="0.114942"/>
+<status status="PASS" start="2024-09-24T10:09:23.681351" elapsed="0.143662"/>
 </kw>
 <arg>${password}</arg>
-<status status="PASS" start="2024-09-15T22:33:18.771312" elapsed="0.114942"/>
+<status status="PASS" start="2024-09-24T10:09:23.681351" elapsed="0.143662"/>
 </kw>
 <kw name="Click Sign in" owner="Login_Keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-09-15T22:33:18.886254" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
+<msg time="2024-09-24T10:09:23.827610" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
 <arg>${btn_signIn}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-15T22:33:18.886254" elapsed="6.772253"/>
+<status status="PASS" start="2024-09-24T10:09:23.827610" elapsed="4.210912"/>
 </kw>
-<status status="PASS" start="2024-09-15T22:33:18.886254" elapsed="6.772253"/>
+<status status="PASS" start="2024-09-24T10:09:23.825013" elapsed="4.213509"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-09-15T22:33:28.659996" level="INFO">Slept 3 seconds.</msg>
+<msg time="2024-09-24T10:09:31.040216" level="INFO">Slept 3 seconds.</msg>
 <arg>3seconds</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-09-15T22:33:25.659390" elapsed="3.000606"/>
+<status status="PASS" start="2024-09-24T10:09:28.038522" elapsed="3.002204"/>
 </kw>
 <kw name="Verify Successful Login" owner="Login_Keywords">
 <kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2024-09-15T22:33:28.664513" level="INFO">Page title is 'Admin - HI HR System'.</msg>
+<msg time="2024-09-24T10:09:31.054906" level="INFO">Page title is 'Admin - HI HR System'.</msg>
 <arg>Admin - HI HR System</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2024-09-15T22:33:28.659996" elapsed="0.004517"/>
+<status status="PASS" start="2024-09-24T10:09:31.043236" elapsed="0.011670"/>
 </kw>
-<status status="PASS" start="2024-09-15T22:33:28.659996" elapsed="0.004517"/>
+<status status="PASS" start="2024-09-24T10:09:31.040726" elapsed="0.014180"/>
 </kw>
-<status status="PASS" start="2024-09-15T22:33:04.912485" elapsed="23.752028"/>
+<status status="PASS" start="2024-09-24T10:09:13.126891" elapsed="17.928015"/>
 </test>
-<test id="s1-t2" name="Criteria" line="193">
-<kw name="Click Job" owner="Job_Advertisement_Keywords">
+<test id="s1-t2" name="Recruitment Request" line="25">
+<kw name="Click Recruitment Request" owner="Recruitment_Request_Keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-09-15T22:33:28.664513" level="INFO">Clicking element 'link:Job'.</msg>
-<arg>${job}</arg>
+<msg time="2024-09-24T10:09:31.059300" level="INFO">Clicking element 'xpath://a[normalize-space()='Recruitment Request']'.</msg>
+<arg>${r_request}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-15T22:33:28.664513" elapsed="0.120248"/>
+<status status="PASS" start="2024-09-24T10:09:31.059300" elapsed="0.070499"/>
 </kw>
-<status status="PASS" start="2024-09-15T22:33:28.664513" elapsed="0.120248"/>
+<status status="PASS" start="2024-09-24T10:09:31.059184" elapsed="0.070615"/>
 </kw>
-<kw name="Click Job Advertisement" owner="Job_Advertisement_Keywords">
+<kw name="Click Hiring Manager" owner="Recruitment_Request_Keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-09-15T22:33:28.786773" level="INFO">Clicking element 'link:Job Advertisement'.</msg>
-<arg>${nav_job_adv}</arg>
+<msg time="2024-09-24T10:09:31.130694" level="INFO">Clicking element 'xpath://a[normalize-space()='Hiring Manager']'.</msg>
+<arg>${hiring_manager}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-15T22:33:28.785771" elapsed="1.779174"/>
+<status status="PASS" start="2024-09-24T10:09:31.130694" elapsed="1.149330"/>
 </kw>
-<status status="PASS" start="2024-09-15T22:33:28.785771" elapsed="1.779174"/>
+<status status="PASS" start="2024-09-24T10:09:31.130694" elapsed="1.151858"/>
 </kw>
-<kw name="Click Criteria" owner="Job_Advertisement_Keywords">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-24T10:09:35.282671" level="INFO">Slept 3 seconds.</msg>
+<arg>3seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-24T10:09:32.282552" elapsed="3.000119"/>
+</kw>
+<kw name="Click Add New" owner="Recruitment_Request_Keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-09-15T22:33:30.564945" level="INFO">Clicking element 'xpath:(//i[@class='fa fa fa-plus'])[1]'.</msg>
-<arg>${job_criteria}</arg>
+<msg time="2024-09-24T10:09:35.282671" level="INFO">Clicking element 'link:Add New'.</msg>
+<arg>${add_new}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-15T22:33:30.564945" elapsed="1.897148"/>
+<status status="PASS" start="2024-09-24T10:09:35.282671" elapsed="2.660264"/>
 </kw>
-<status status="PASS" start="2024-09-15T22:33:30.564945" elapsed="1.897148"/>
+<status status="PASS" start="2024-09-24T10:09:35.282671" elapsed="2.660264"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-09-15T22:33:37.465409" level="INFO">Slept 5 seconds.</msg>
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-09-15T22:33:32.462093" elapsed="5.003316"/>
-</kw>
-<kw name="Criteria 1" owner="Job_Advertisement_Keywords">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-09-15T22:33:37.465409" level="INFO">Typing text 'Technical Interview full automation' into text field 'xpath:(//textarea[@id='criteria'])[1]'.</msg>
-<arg>${txt_criteria_1}</arg>
-<arg>${arg_criteria_1}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-15T22:33:37.465409" elapsed="0.206413"/>
-</kw>
-<arg>Technical Interview full automation</arg>
-<status status="PASS" start="2024-09-15T22:33:37.465409" elapsed="0.206413"/>
-</kw>
-<kw name="Point 1" owner="Job_Advertisement_Keywords">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-09-15T22:33:37.671822" level="INFO">Typing text '5' into text field 'xpath:(//input[@name='point[]'])[1]'.</msg>
-<arg>${txt_point_1}</arg>
-<arg>${arg_point_1}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-15T22:33:37.671822" elapsed="0.083540"/>
-</kw>
-<arg>5</arg>
-<status status="PASS" start="2024-09-15T22:33:37.671822" elapsed="0.083540"/>
-</kw>
-<kw name="Status 1" owner="Job_Advertisement_Keywords">
+<kw name="Project/Department" owner="Recruitment_Request_Keywords">
 <kw name="Select From List By Label" owner="SeleniumLibrary">
-<msg time="2024-09-15T22:33:37.770547" level="INFO">Selecting options from selection list 'xpath:(//select[@name='status[]'])[1]' by label Mandatory.</msg>
-<arg>${criteria_status_1}</arg>
-<arg>${arg_criteria_status_1}</arg>
+<msg time="2024-09-24T10:09:37.945979" level="INFO">Selecting options from selection list 'id:department' by label MEAL.</msg>
+<arg>${project}</arg>
+<arg>${arg_project}</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<status status="PASS" start="2024-09-15T22:33:37.755362" elapsed="0.068942"/>
+<status status="PASS" start="2024-09-24T10:09:37.945979" elapsed="0.100188"/>
 </kw>
-<arg>Mandatory</arg>
-<status status="PASS" start="2024-09-15T22:33:37.755362" elapsed="0.068942"/>
+<arg>MEAL</arg>
+<status status="PASS" start="2024-09-24T10:09:37.944945" elapsed="0.101222"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-09-15T22:33:39.824854" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-09-15T22:33:37.824304" elapsed="2.000550"/>
-</kw>
-<kw name="Add Row" owner="Job_Advertisement_Keywords">
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-09-15T22:33:39.824854" level="INFO">Clicking button 'id:add-row-btn'.</msg>
-<arg>${btn_add_row}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-15T22:33:39.824854" elapsed="0.094746"/>
-</kw>
-<status status="PASS" start="2024-09-15T22:33:39.824854" elapsed="0.094746"/>
-</kw>
-<kw name="Criteria 2" owner="Job_Advertisement_Keywords">
+<kw name="Name of Head of Department" owner="Recruitment_Request_Keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-09-15T22:33:39.922668" level="INFO">Typing text 'Written Exam full automation' into text field 'xpath:(//textarea[@id='criteria'])[2]'.</msg>
-<arg>${txt_criteria_2}</arg>
-<arg>${arg_criteria_2}</arg>
+<msg time="2024-09-24T10:09:38.046167" level="INFO">Typing text 'Abdullah' into text field 'id:name_of_department'.</msg>
+<arg>${name_of_HD}</arg>
+<arg>${arg_name_of_HD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-15T22:33:39.922668" elapsed="0.208241"/>
+<status status="PASS" start="2024-09-24T10:09:38.046167" elapsed="0.109057"/>
 </kw>
-<arg>Written Exam full automation</arg>
-<status status="PASS" start="2024-09-15T22:33:39.919600" elapsed="0.211309"/>
+<arg>Abdullah</arg>
+<status status="PASS" start="2024-09-24T10:09:38.046167" elapsed="0.109057"/>
 </kw>
-<kw name="Point 2" owner="Job_Advertisement_Keywords">
+<kw name="Position Title" owner="Recruitment_Request_Keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-09-15T22:33:40.130909" level="INFO">Typing text '3' into text field 'xpath:(//input[@name='point[]'])[2]'.</msg>
-<arg>${txt_point_2}</arg>
-<arg>${arg_point_2}</arg>
+<msg time="2024-09-24T10:09:38.156231" level="INFO">Typing text 'Project Manager' into text field 'id:position_title'.</msg>
+<arg>${position_title}</arg>
+<arg>${arg_position_title}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-15T22:33:40.130909" elapsed="0.094294"/>
+<status status="PASS" start="2024-09-24T10:09:38.156231" elapsed="0.173963"/>
 </kw>
-<arg>3</arg>
-<status status="PASS" start="2024-09-15T22:33:40.130909" elapsed="0.094294"/>
+<arg>Project Manager</arg>
+<status status="PASS" start="2024-09-24T10:09:38.155224" elapsed="0.174970"/>
 </kw>
-<kw name="Status 2" owner="Job_Advertisement_Keywords">
+<kw name="Job Description" owner="Recruitment_Request_Keywords">
 <kw name="Select From List By Label" owner="SeleniumLibrary">
-<msg time="2024-09-15T22:33:40.231211" level="INFO">Selecting options from selection list 'xpath:(//select[@name='status[]'])[2]' by label Mandatory.</msg>
-<arg>${criteria_status_2}</arg>
-<arg>${arg_criteria_status_2}</arg>
+<msg time="2024-09-24T10:09:38.330194" level="INFO">Selecting options from selection list 'name:job_description' by label Supply Chain Officer.</msg>
+<arg>${job_des}</arg>
+<arg>${arg_job_des}</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<status status="PASS" start="2024-09-15T22:33:40.225203" elapsed="0.049537"/>
+<status status="PASS" start="2024-09-24T10:09:38.330194" elapsed="0.097285"/>
 </kw>
-<arg>Mandatory</arg>
-<status status="PASS" start="2024-09-15T22:33:40.225203" elapsed="0.049537"/>
+<arg>Supply Chain Officer</arg>
+<status status="PASS" start="2024-09-24T10:09:38.330194" elapsed="0.099796"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-09-15T22:33:42.274991" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-09-15T22:33:40.274740" elapsed="2.000251"/>
-</kw>
-<kw name="Add Row" owner="Job_Advertisement_Keywords">
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-09-15T22:33:42.274991" level="INFO">Clicking button 'id:add-row-btn'.</msg>
-<arg>${btn_add_row}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-15T22:33:42.274991" elapsed="0.065640"/>
-</kw>
-<status status="PASS" start="2024-09-15T22:33:42.274991" elapsed="0.065640"/>
-</kw>
-<kw name="Criteria 3" owner="Job_Advertisement_Keywords">
+<kw name="Number of Positions" owner="Recruitment_Request_Keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-09-15T22:33:42.341659" level="INFO">Typing text 'HR Interview full automation' into text field 'xpath:(//textarea[@id='criteria'])[3]'.</msg>
-<arg>${txt_criteria_3}</arg>
-<arg>${arg_criteria_3}</arg>
+<msg time="2024-09-24T10:09:38.429990" level="INFO">Typing text '03' into text field 'id:number_of_position'.</msg>
+<arg>${number_pos}</arg>
+<arg>${arg_number_pos}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-15T22:33:42.341659" elapsed="0.217488"/>
+<status status="PASS" start="2024-09-24T10:09:38.429990" elapsed="0.102666"/>
 </kw>
-<arg>HR Interview full automation</arg>
-<status status="PASS" start="2024-09-15T22:33:42.340631" elapsed="0.218516"/>
+<arg>03</arg>
+<status status="PASS" start="2024-09-24T10:09:38.429990" elapsed="0.102666"/>
 </kw>
-<kw name="Point 3" owner="Job_Advertisement_Keywords">
+<kw name="Employee at present in this company" owner="Recruitment_Request_Keywords">
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:09:38.535755" level="INFO">Selecting options from selection list 'name:employee_at_present' by value Yes.</msg>
+<arg>${present_employee}</arg>
+<arg>${arg_present_employee}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-09-24T10:09:38.534747" elapsed="0.077517"/>
+</kw>
+<arg>Yes</arg>
+<status status="PASS" start="2024-09-24T10:09:38.532656" elapsed="0.079608"/>
+</kw>
+<kw name="Location" owner="Recruitment_Request_Keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-09-15T22:33:42.559147" level="INFO">Typing text '2' into text field 'xpath:(//input[@name='point[]'])[3]'.</msg>
-<arg>${txt_point_3}</arg>
-<arg>${arg_point_3}</arg>
+<msg time="2024-09-24T10:09:38.612264" level="INFO">Typing text 'Dhaka' into text field 'id:location'.</msg>
+<arg>${location}</arg>
+<arg>${arg_location}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-15T22:33:42.559147" elapsed="0.100229"/>
+<status status="PASS" start="2024-09-24T10:09:38.612264" elapsed="0.117919"/>
 </kw>
-<arg>2</arg>
-<status status="PASS" start="2024-09-15T22:33:42.559147" elapsed="0.100229"/>
+<arg>Dhaka</arg>
+<status status="PASS" start="2024-09-24T10:09:38.612264" elapsed="0.117919"/>
 </kw>
-<kw name="Status 3" owner="Job_Advertisement_Keywords">
+<kw name="Type of Appointment" owner="Recruitment_Request_Keywords">
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:09:38.732687" level="INFO">Selecting options from selection list 'id:appointment_type' by value Permanent.</msg>
+<arg>${appointment_type}</arg>
+<arg>${arg_appointment_type}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-09-24T10:09:38.732687" elapsed="0.112438"/>
+</kw>
+<arg>Permanent</arg>
+<status status="PASS" start="2024-09-24T10:09:38.730183" elapsed="0.114942"/>
+</kw>
+<kw name="Job Starting date" owner="Recruitment_Request_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:09:38.845125" level="INFO">Typing text '20-08-2024' into text field 'id:job_starting_date'.</msg>
+<arg>${job_starting_date}</arg>
+<arg>${arg_job_starting_date}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:09:38.845125" elapsed="0.152051"/>
+</kw>
+<arg>20-08-2024</arg>
+<status status="PASS" start="2024-09-24T10:09:38.845125" elapsed="0.152051"/>
+</kw>
+<kw name="Job Ending date" owner="Recruitment_Request_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:09:38.999685" level="INFO">Typing text '31-12-2025' into text field 'id:job_ending_date'.</msg>
+<arg>${job_ending_date}</arg>
+<arg>${arg_job_ending_date}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:09:38.997176" elapsed="0.167709"/>
+</kw>
+<arg>31-12-2025</arg>
+<status status="PASS" start="2024-09-24T10:09:38.997176" elapsed="0.167709"/>
+</kw>
+<kw name="Vacancy caused due to" owner="Recruitment_Request_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:09:39.169636" level="INFO">Typing text 'Resignation' into text field 'id:vacancy_caused_due_to'.</msg>
+<arg>${vacancy_caused}</arg>
+<arg>${arg_vacancy_caused}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:09:39.168694" elapsed="0.145985"/>
+</kw>
+<arg>Resignation</arg>
+<status status="PASS" start="2024-09-24T10:09:39.167682" elapsed="0.146997"/>
+</kw>
+<kw name="Range of Salary From" owner="Recruitment_Request_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:09:39.314679" level="INFO">Typing text '35000' into text field 'id:salary_range_from'.</msg>
+<arg>${salary_range_from}</arg>
+<arg>${arg_salary_range_from}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:09:39.314679" elapsed="0.107263"/>
+</kw>
+<arg>35000</arg>
+<status status="PASS" start="2024-09-24T10:09:39.314679" elapsed="0.107263"/>
+</kw>
+<kw name="Type of Recruitment" owner="Recruitment_Request_Keywords">
 <kw name="Select From List By Label" owner="SeleniumLibrary">
-<msg time="2024-09-15T22:33:42.659376" level="INFO">Selecting options from selection list 'xpath:(//select[@name='status[]'])[3]' by label Optional.</msg>
-<arg>${criteria_status_3}</arg>
-<arg>${arg_criteria_status_3}</arg>
+<msg time="2024-09-24T10:09:39.421942" level="INFO">Selecting options from selection list 'name:recruitment_type' by label External Recruitment.</msg>
+<arg>${recruitment_type}</arg>
+<arg>${arg_recruitment_type}</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<status status="PASS" start="2024-09-15T22:33:42.659376" elapsed="0.051319"/>
+<status status="PASS" start="2024-09-24T10:09:39.421942" elapsed="0.079503"/>
 </kw>
-<arg>Optional</arg>
-<status status="PASS" start="2024-09-15T22:33:42.659376" elapsed="0.051319"/>
+<arg>External Recruitment</arg>
+<status status="PASS" start="2024-09-24T10:09:39.421942" elapsed="0.079503"/>
 </kw>
-<kw name="Save_Criteria" owner="Job_Advertisement_Keywords">
+<kw name="HOD (Assign To)" owner="Recruitment_Request_Keywords">
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:09:39.502446" level="INFO">Selecting options from selection list 'name:hodam_id' by value 1.</msg>
+<arg>${hod}</arg>
+<arg>${arg_hod}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-09-24T10:09:39.502446" elapsed="0.085655"/>
+</kw>
+<arg>1</arg>
+<status status="PASS" start="2024-09-24T10:09:39.502213" elapsed="0.085888"/>
+</kw>
+<kw name="Range of Salary To" owner="Recruitment_Request_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:09:39.588101" level="INFO">Typing text '45000' into text field 'id:salary_range_to'.</msg>
+<arg>${salary_range_to}</arg>
+<arg>${arg_range_to}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:09:39.588101" elapsed="0.119188"/>
+</kw>
+<arg>45000</arg>
+<status status="PASS" start="2024-09-24T10:09:39.588101" elapsed="0.119188"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${confirm_submit}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-09-24T10:09:39.707289" elapsed="0.279404"/>
+</kw>
+<kw name="Comments" owner="Recruitment_Request_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:09:39.989204" level="INFO">Typing text 'As the potential candidate are available externally, we have decided to try to find the candidate through external recruitment process first.' into text field 'id:comments'.</msg>
+<arg>${comment}</arg>
+<arg>${arg_comment}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:09:39.989204" elapsed="0.585578"/>
+</kw>
+<arg>As the potential candidate are available externally, we have decided to try to find the candidate through external recruitment process first.</arg>
+<status status="PASS" start="2024-09-24T10:09:39.989204" elapsed="0.585578"/>
+</kw>
+<kw name="Confirm Submit" owner="Recruitment_Request_Keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-09-15T22:33:42.710695" level="INFO">Clicking button 'name:save'.</msg>
-<arg>${btn_save}</arg>
+<msg time="2024-09-24T10:09:40.574782" level="INFO">Clicking button 'name:save_and_update'.</msg>
+<arg>${confirm_submit}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-15T22:33:42.710695" elapsed="2.534040"/>
+<status status="PASS" start="2024-09-24T10:09:40.574782" elapsed="3.256861"/>
 </kw>
-<status status="PASS" start="2024-09-15T22:33:42.710695" elapsed="2.534040"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-09-15T22:33:48.245988" level="INFO">Slept 3 seconds.</msg>
-<arg>3s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-09-15T22:33:45.245750" elapsed="3.000238"/>
+<status status="PASS" start="2024-09-24T10:09:40.574782" elapsed="3.256861"/>
 </kw>
 <kw name="Submission Check" owner="Recruitment_Request_Keywords">
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2024-09-15T22:33:48.253496" level="INFO">Current page contains text 'Job Advertisement List'.</msg>
+<msg time="2024-09-24T10:09:43.856617" level="INFO">Current page contains text 'Recruitment Request List'.</msg>
 <arg>${arg_submission_check}</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2024-09-15T22:33:48.245988" elapsed="0.023141"/>
+<status status="PASS" start="2024-09-24T10:09:43.832639" elapsed="0.023978"/>
 </kw>
-<arg>Job Advertisement List</arg>
-<status status="PASS" start="2024-09-15T22:33:48.245988" elapsed="0.023141"/>
+<arg>Recruitment Request List</arg>
+<status status="PASS" start="2024-09-24T10:09:43.831643" elapsed="0.024974"/>
 </kw>
-<status status="PASS" start="2024-09-15T22:33:28.664513" elapsed="19.604616"/>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-24T10:09:48.858090" level="INFO">Slept 5 seconds.</msg>
+<arg>5 Seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-24T10:09:43.857617" elapsed="5.000473"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:09:31.057573" elapsed="17.802183"/>
 </test>
-<test id="s1-t3" name="Job Publish" line="235">
+<test id="s1-t3" name="Edit Recruitment" line="52">
+<kw name="Click Edit" owner="Recruitment_Request_Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:09:48.863526" level="INFO">Clicking element 'xpath:(//i[@class='fa fa-edit'])[1]'.</msg>
+<arg>${edit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:09:48.861020" elapsed="4.092172"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:09:48.861020" elapsed="4.092172"/>
+</kw>
+<kw name="Project/Department" owner="Recruitment_Request_Keywords">
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:09:52.956099" level="INFO">Selecting options from selection list 'id:department' by label SQA.</msg>
+<arg>${project}</arg>
+<arg>${arg_project}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-09-24T10:09:52.955727" elapsed="0.089614"/>
+</kw>
+<arg>SQA</arg>
+<status status="PASS" start="2024-09-24T10:09:52.954976" elapsed="0.090365"/>
+</kw>
+<kw name="Name of Head of Department" owner="Recruitment_Request_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:09:53.046851" level="INFO">Typing text 'Shah Newaj' into text field 'id:name_of_department'.</msg>
+<arg>${name_of_HD}</arg>
+<arg>${arg_name_of_HD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:09:53.046851" elapsed="0.143804"/>
+</kw>
+<arg>Shah Newaj</arg>
+<status status="PASS" start="2024-09-24T10:09:53.045341" elapsed="0.145487"/>
+</kw>
+<kw name="Position Title" owner="Recruitment_Request_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:09:53.191503" level="INFO">Typing text 'SQA Automation 4' into text field 'id:position_title'.</msg>
+<arg>${position_title}</arg>
+<arg>${arg_position_title}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:09:53.191503" elapsed="0.159344"/>
+</kw>
+<arg>SQA Automation 4</arg>
+<status status="PASS" start="2024-09-24T10:09:53.191503" elapsed="0.159344"/>
+</kw>
+<kw name="Job Description" owner="Recruitment_Request_Keywords">
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:09:53.353342" level="INFO">Selecting options from selection list 'name:job_description' by label Education Program Coordinator.</msg>
+<arg>${job_des}</arg>
+<arg>${arg_job_des}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-09-24T10:09:53.350847" elapsed="0.082998"/>
+</kw>
+<arg>Education Program Coordinator</arg>
+<status status="PASS" start="2024-09-24T10:09:53.350847" elapsed="0.082998"/>
+</kw>
+<kw name="Number of Positions" owner="Recruitment_Request_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:09:53.434905" level="INFO">Typing text '05' into text field 'id:number_of_position'.</msg>
+<arg>${number_pos}</arg>
+<arg>${arg_number_pos}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:09:53.433845" elapsed="0.104276"/>
+</kw>
+<arg>05</arg>
+<status status="PASS" start="2024-09-24T10:09:53.433845" elapsed="0.104490"/>
+</kw>
+<kw name="Employee at present in this company" owner="Recruitment_Request_Keywords">
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:09:53.538387" level="INFO">Selecting options from selection list 'name:employee_at_present' by value No.</msg>
+<arg>${present_employee}</arg>
+<arg>${arg_present_employee}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-09-24T10:09:53.538387" elapsed="0.073752"/>
+</kw>
+<arg>No</arg>
+<status status="PASS" start="2024-09-24T10:09:53.538387" elapsed="0.073752"/>
+</kw>
+<kw name="Location" owner="Recruitment_Request_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:09:53.615147" level="INFO">Typing text 'Rajshahi' into text field 'id:location'.</msg>
+<arg>${location}</arg>
+<arg>${arg_location}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:09:53.615147" elapsed="0.143183"/>
+</kw>
+<arg>Rajshahi</arg>
+<status status="PASS" start="2024-09-24T10:09:53.615147" elapsed="0.143183"/>
+</kw>
+<kw name="Type of Appointment" owner="Recruitment_Request_Keywords">
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:09:53.758330" level="INFO">Selecting options from selection list 'id:appointment_type' by value Fixed Term.</msg>
+<arg>${appointment_type}</arg>
+<arg>${arg_appointment_type}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-09-24T10:09:53.758330" elapsed="0.089098"/>
+</kw>
+<arg>Fixed Term</arg>
+<status status="PASS" start="2024-09-24T10:09:53.758330" elapsed="0.089098"/>
+</kw>
+<kw name="Job Starting date" owner="Recruitment_Request_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:09:53.847428" level="INFO">Typing text '01-01-2025' into text field 'id:job_starting_date'.</msg>
+<arg>${job_starting_date}</arg>
+<arg>${arg_job_starting_date}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:09:53.847428" elapsed="0.142736"/>
+</kw>
+<arg>01-01-2025</arg>
+<status status="PASS" start="2024-09-24T10:09:53.847428" elapsed="0.142736"/>
+</kw>
+<kw name="Job Ending date" owner="Recruitment_Request_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:09:53.992664" level="INFO">Typing text '07-08-2026' into text field 'id:job_ending_date'.</msg>
+<arg>${job_ending_date}</arg>
+<arg>${arg_job_ending_date}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:09:53.992664" elapsed="0.152130"/>
+</kw>
+<arg>07-08-2026</arg>
+<status status="PASS" start="2024-09-24T10:09:53.992664" elapsed="0.152130"/>
+</kw>
+<kw name="Vacancy caused due to" owner="Recruitment_Request_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:09:54.144794" level="INFO">Typing text 'Termination' into text field 'id:vacancy_caused_due_to'.</msg>
+<arg>${vacancy_caused}</arg>
+<arg>${arg_vacancy_caused}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:09:54.144794" elapsed="0.141190"/>
+</kw>
+<arg>Termination</arg>
+<status status="PASS" start="2024-09-24T10:09:54.144794" elapsed="0.141829"/>
+</kw>
+<kw name="Range of Salary From" owner="Recruitment_Request_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:09:54.286623" level="INFO">Typing text '40000' into text field 'id:salary_range_from'.</msg>
+<arg>${salary_range_from}</arg>
+<arg>${arg_salary_range_from}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:09:54.286623" elapsed="0.108369"/>
+</kw>
+<arg>40000</arg>
+<status status="PASS" start="2024-09-24T10:09:54.286623" elapsed="0.108369"/>
+</kw>
+<kw name="Type of Recruitment" owner="Recruitment_Request_Keywords">
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:09:54.394992" level="INFO">Selecting options from selection list 'name:recruitment_type' by label Internal Recruitment.</msg>
+<arg>${recruitment_type}</arg>
+<arg>${arg_recruitment_type}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-09-24T10:09:54.394992" elapsed="0.077269"/>
+</kw>
+<arg>Internal Recruitment</arg>
+<status status="PASS" start="2024-09-24T10:09:54.394992" elapsed="0.077269"/>
+</kw>
+<kw name="HOD (Assign To)" owner="Recruitment_Request_Keywords">
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:09:54.474804" level="INFO">Selecting options from selection list 'name:hodam_id' by value 9.</msg>
+<arg>${hod}</arg>
+<arg>${arg_hod}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-09-24T10:09:54.474804" elapsed="0.076014"/>
+</kw>
+<arg>9</arg>
+<status status="PASS" start="2024-09-24T10:09:54.472261" elapsed="0.080128"/>
+</kw>
+<kw name="Range of Salary To" owner="Recruitment_Request_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:09:54.553095" level="INFO">Typing text '60000' into text field 'id:salary_range_to'.</msg>
+<arg>${salary_range_to}</arg>
+<arg>${arg_range_to}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:09:54.553095" elapsed="0.115847"/>
+</kw>
+<arg>60000</arg>
+<status status="PASS" start="2024-09-24T10:09:54.553095" elapsed="0.116419"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${confirm_submit}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-09-24T10:09:54.670163" elapsed="0.291027"/>
+</kw>
+<kw name="Comments" owner="Recruitment_Request_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:09:54.966436" level="INFO">Typing text 'We have decided to try to find the candidate through internal recruitment process first.' into text field 'id:comments'.</msg>
+<arg>${comment}</arg>
+<arg>${arg_comment}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:09:54.965394" elapsed="0.419994"/>
+</kw>
+<arg>We have decided to try to find the candidate through internal recruitment process first.</arg>
+<status status="PASS" start="2024-09-24T10:09:54.963680" elapsed="0.421708"/>
+</kw>
+<kw name="Confirm Submit" owner="Recruitment_Request_Keywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:09:55.385388" level="INFO">Clicking button 'name:save_and_update'.</msg>
+<arg>${confirm_submit}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:09:55.385388" elapsed="2.526938"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:09:55.385388" elapsed="2.526938"/>
+</kw>
+<kw name="Submission Check" owner="Recruitment_Request_Keywords">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:09:57.936082" level="INFO">Current page contains text 'Recruitment Request List'.</msg>
+<arg>${arg_submission_check}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-09-24T10:09:57.912326" elapsed="0.023756"/>
+</kw>
+<arg>Recruitment Request List</arg>
+<status status="PASS" start="2024-09-24T10:09:57.912326" elapsed="0.023756"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-24T10:10:02.937632" level="INFO">Slept 5 seconds.</msg>
+<arg>5 Seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-24T10:09:57.937083" elapsed="5.000549"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:09:48.861020" elapsed="14.077327"/>
+</test>
+<test id="s1-t4" name="HOD Approval" line="75">
+<kw name="Click Nav Hod" owner="Recruitment_Request_Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:10:02.940990" level="INFO">Clicking element 'link:HOD'.</msg>
+<arg>${nav_hod}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:10:02.940990" elapsed="1.400782"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:10:02.938347" elapsed="1.403425"/>
+</kw>
+<kw name="Click Edit" owner="Recruitment_Request_Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:10:04.343889" level="INFO">Clicking element 'xpath:(//i[@class='fa fa-edit'])[1]'.</msg>
+<arg>${edit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:10:04.343889" elapsed="1.385561"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:10:04.342873" elapsed="1.386577"/>
+</kw>
+<kw name="C HR Manager" owner="Recruitment_Request_Keywords">
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:10:05.729450" level="INFO">Selecting options from selection list 'id:chrm_id' by value 1.</msg>
+<arg>${c_hr_manager}</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-09-24T10:10:05.729450" elapsed="0.082796"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:10:05.729450" elapsed="0.082973"/>
+</kw>
+<kw name="C F Manager" owner="Recruitment_Request_Keywords">
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:10:05.812423" level="INFO">Selecting options from selection list 'id:cfm_id' by value 9.</msg>
+<arg>${c_f_manager}</arg>
+<arg>9</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-09-24T10:10:05.812423" elapsed="0.087342"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:10:05.812423" elapsed="0.087342"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${confirm_submit}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-09-24T10:10:05.899765" elapsed="0.295253"/>
+</kw>
+<kw name="HOD I Agree" owner="Recruitment_Request_Keywords">
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:10:06.197459" level="INFO">Selecting checkbox 'name:hodam_status'.</msg>
+<arg>${hod_i_agree}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:10:06.197459" elapsed="0.318772"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:10:06.197459" elapsed="0.318772"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-24T10:10:09.519330" level="INFO">Slept 3 seconds.</msg>
+<arg>3 Seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-24T10:10:06.518735" elapsed="3.000595"/>
+</kw>
+<kw name="Confirm Submit" owner="Recruitment_Request_Keywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:10:09.519330" level="INFO">Clicking button 'name:save_and_update'.</msg>
+<arg>${confirm_submit}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:10:09.519330" elapsed="2.654427"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:10:09.519330" elapsed="2.654427"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-24T10:10:15.174603" level="INFO">Slept 3 seconds.</msg>
+<arg>3 Seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-24T10:10:12.173757" elapsed="3.000846"/>
+</kw>
+<kw name="Submission Check" owner="Recruitment_Request_Keywords">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:10:15.216320" level="INFO">Current page contains text 'Recruitment Request List'.</msg>
+<arg>${arg_submission_check}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-09-24T10:10:15.174603" elapsed="0.041717"/>
+</kw>
+<arg>Recruitment Request List</arg>
+<status status="PASS" start="2024-09-24T10:10:15.174603" elapsed="0.041717"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-24T10:10:18.217056" level="INFO">Slept 3 seconds.</msg>
+<arg>3 Seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-24T10:10:15.216320" elapsed="3.000736"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:10:02.938347" elapsed="15.278709"/>
+</test>
+<test id="s1-t5" name="C HR Manager Approval" line="88">
+<kw name="CLick Nav C HR Manager" owner="Recruitment_Request_Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:10:18.217056" level="INFO">Clicking element 'link:C HR Manager'.</msg>
+<arg>${nav_c_hr_manager}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:10:18.217056" elapsed="1.466252"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:10:18.217056" elapsed="1.466252"/>
+</kw>
+<kw name="Click Edit" owner="Recruitment_Request_Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:10:19.683308" level="INFO">Clicking element 'xpath:(//i[@class='fa fa-edit'])[1]'.</msg>
+<arg>${edit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:10:19.683308" elapsed="1.176697"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:10:19.683308" elapsed="1.176697"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${confirm_submit}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-09-24T10:10:20.861019" elapsed="0.299698"/>
+</kw>
+<kw name="CHRM I Agree" owner="Recruitment_Request_Keywords">
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:10:21.161715" level="INFO">Selecting checkbox 'name:chrm_status'.</msg>
+<arg>${chrm_i_agree}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:10:21.161715" elapsed="0.077505"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:10:21.160717" elapsed="0.078503"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-24T10:10:24.240047" level="INFO">Slept 3 seconds.</msg>
+<arg>3 Seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-24T10:10:21.239220" elapsed="3.000827"/>
+</kw>
+<kw name="Confirm Submit" owner="Recruitment_Request_Keywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:10:24.241111" level="INFO">Clicking button 'name:save_and_update'.</msg>
+<arg>${confirm_submit}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:10:24.241111" elapsed="3.245010"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:10:24.241111" elapsed="3.245010"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-24T10:10:30.488999" level="INFO">Slept 3 seconds.</msg>
+<arg>3 Seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-24T10:10:27.487799" elapsed="3.001200"/>
+</kw>
+<kw name="Submission Check" owner="Recruitment_Request_Keywords">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:10:30.501606" level="INFO">Current page contains text 'Recruitment Request List'.</msg>
+<arg>${arg_submission_check}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-09-24T10:10:30.488999" elapsed="0.012607"/>
+</kw>
+<arg>Recruitment Request List</arg>
+<status status="PASS" start="2024-09-24T10:10:30.488999" elapsed="0.012607"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-24T10:10:33.502119" level="INFO">Slept 3 seconds.</msg>
+<arg>3 Seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-24T10:10:30.501606" elapsed="3.000513"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:10:18.217056" elapsed="15.285063"/>
+</test>
+<test id="s1-t6" name="C F Manager Approval" line="99">
+<kw name="Click Nav C F Manager" owner="Recruitment_Request_Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:10:33.510697" level="INFO">Clicking element 'link:C F Manager'.</msg>
+<arg>${nav_c_f_manager}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:10:33.510697" elapsed="1.498524"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:10:33.510697" elapsed="1.498524"/>
+</kw>
+<kw name="Click Edit" owner="Recruitment_Request_Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:10:35.012231" level="INFO">Clicking element 'xpath:(//i[@class='fa fa-edit'])[1]'.</msg>
+<arg>${edit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:10:35.011231" elapsed="1.162028"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:10:35.010174" elapsed="1.163085"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${confirm_submit}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-09-24T10:10:36.173259" elapsed="0.322111"/>
+</kw>
+<kw name="CFM I Agree" owner="Recruitment_Request_Keywords">
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:10:36.495370" level="INFO">Selecting checkbox 'name:cfm_status'.</msg>
+<arg>${cfm_i_agree}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:10:36.495370" elapsed="0.083713"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:10:36.495370" elapsed="0.083713"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-24T10:10:39.579636" level="INFO">Slept 3 seconds.</msg>
+<arg>3 Seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-24T10:10:36.579083" elapsed="3.000553"/>
+</kw>
+<kw name="Confirm Submit" owner="Recruitment_Request_Keywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:10:39.579636" level="INFO">Clicking button 'name:save_and_update'.</msg>
+<arg>${confirm_submit}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:10:39.579636" elapsed="2.736153"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:10:39.579636" elapsed="2.736153"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-24T10:10:45.316508" level="INFO">Slept 3 seconds.</msg>
+<arg>3 Seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-24T10:10:42.315789" elapsed="3.000719"/>
+</kw>
+<kw name="Submission Check" owner="Recruitment_Request_Keywords">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:10:45.336915" level="INFO">Current page contains text 'Recruitment Request List'.</msg>
+<arg>${arg_submission_check}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-09-24T10:10:45.316508" elapsed="0.020407"/>
+</kw>
+<arg>Recruitment Request List</arg>
+<status status="PASS" start="2024-09-24T10:10:45.316508" elapsed="0.020407"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-24T10:10:48.337754" level="INFO">Slept 3 seconds.</msg>
+<arg>3 Seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-24T10:10:45.336915" elapsed="3.000839"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:10:33.502119" elapsed="14.835635"/>
+</test>
+<test id="s1-t7" name="Job Advertisement" line="110">
+<kw name="Click Job" owner="Job_Advertisement_Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:10:48.337754" level="INFO">Clicking element 'link:Job'.</msg>
+<arg>${job}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:10:48.337754" elapsed="0.135835"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:10:48.337754" elapsed="0.135940"/>
+</kw>
 <kw name="Click Job Advertisement" owner="Job_Advertisement_Keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-09-15T22:33:48.269129" level="INFO">Clicking element 'link:Job Advertisement'.</msg>
+<msg time="2024-09-24T10:10:48.474704" level="INFO">Clicking element 'link:Job Advertisement'.</msg>
 <arg>${nav_job_adv}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-15T22:33:48.269129" elapsed="2.038092"/>
+<status status="PASS" start="2024-09-24T10:10:48.474704" elapsed="1.432286"/>
 </kw>
-<status status="PASS" start="2024-09-15T22:33:48.269129" elapsed="2.038092"/>
+<status status="PASS" start="2024-09-24T10:10:48.473694" elapsed="1.433296"/>
+</kw>
+<kw name="Click Add New" owner="Job_Advertisement_Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:10:49.916447" level="INFO">Clicking element 'link:Add New'.</msg>
+<arg>${add_new}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:10:49.915402" elapsed="4.138924"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:10:49.906990" elapsed="4.147336"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:10:48.337754" elapsed="5.716572"/>
+</test>
+<test id="s1-t8" name="Primary Job Information" line="114">
+<kw name="Job Request Id" owner="Job_Advertisement_Keywords">
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:10:54.054326" level="INFO">Selecting options from selection list 'id:recruitment_id' by label 1148.</msg>
+<arg>${job_request_id}</arg>
+<arg>${arg_job_request_id}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-09-24T10:10:54.054326" elapsed="0.102177"/>
+</kw>
+<arg>1148</arg>
+<status status="PASS" start="2024-09-24T10:10:54.054326" elapsed="0.102177"/>
+</kw>
+<kw name="Job Category" owner="Job_Advertisement_Keywords">
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:10:54.157517" level="INFO">Selecting options from selection list 'id:category_id' by label Technical.</msg>
+<arg>${job_categroy}</arg>
+<arg>${arg_job_category}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-09-24T10:10:54.157517" elapsed="0.106656"/>
+</kw>
+<arg>Technical</arg>
+<status status="PASS" start="2024-09-24T10:10:54.157517" elapsed="0.106656"/>
+</kw>
+<kw name="Job Type" owner="Job_Advertisement_Keywords">
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:10:54.266163" level="INFO">Selecting options from selection list 'id:employment_status' by label Contractual.</msg>
+<arg>${job_type}</arg>
+<arg>${arg_job_type}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-09-24T10:10:54.265217" elapsed="0.093143"/>
+</kw>
+<arg>Contractual</arg>
+<status status="PASS" start="2024-09-24T10:10:54.265217" elapsed="0.093143"/>
+</kw>
+<kw name="Role Type" owner="Job_Advertisement_Keywords">
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:10:54.360412" level="INFO">Selecting options from selection list 'id:employee_type' by label Intern.</msg>
+<arg>${role_type}</arg>
+<arg>${arg_role_type}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-09-24T10:10:54.359399" elapsed="0.086253"/>
+</kw>
+<arg>Intern</arg>
+<status status="PASS" start="2024-09-24T10:10:54.359399" elapsed="0.086253"/>
+</kw>
+<kw name="Published date" owner="Job_Advertisement_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:10:54.445652" level="INFO">Typing text '18-08-2024' into text field 'id:published_date'.</msg>
+<arg>${published_date}</arg>
+<arg>${arg_published_date}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:10:54.445652" elapsed="0.166086"/>
+</kw>
+<arg>18-08-2024</arg>
+<status status="PASS" start="2024-09-24T10:10:54.445652" elapsed="0.166086"/>
+</kw>
+<kw name="Application deadline" owner="Job_Advertisement_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:10:54.611738" level="INFO">Typing text '30-08-2024' into text field 'id:application_deadline'.</msg>
+<arg>${application_deadline}</arg>
+<arg>${arg_application_deadline}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:10:54.611738" elapsed="0.182645"/>
+</kw>
+<arg>30-08-2024</arg>
+<status status="PASS" start="2024-09-24T10:10:54.611738" elapsed="0.182645"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${save}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-09-24T10:10:54.795029" elapsed="0.301442"/>
+</kw>
+<kw name="Special Instruction" owner="Job_Advertisement_Keywords">
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:10:55.096471" level="INFO">Selecting frame 'xpath://iframe[@id='special_instruction_ifr']'.</msg>
+<arg>${special_instruction}</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2024-09-24T10:10:55.096471" elapsed="0.067866"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:10:55.164337" level="INFO">Typing text 'This is Special Instruction for Job seekers. You need to complete daily task.' into text field 'id:tinymce'.</msg>
+<arg>${special_instruction_body}</arg>
+<arg>${arg_sp_instruction}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:10:55.164337" elapsed="0.362194"/>
+</kw>
+<kw name="Unselect Frame" owner="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" start="2024-09-24T10:10:55.526531" elapsed="0.000000"/>
+</kw>
+<arg>This is Special Instruction for Job seekers. You need to complete daily task.</arg>
+<status status="PASS" start="2024-09-24T10:10:55.096471" elapsed="0.430060"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-24T10:10:58.543342" level="INFO">Slept 3 seconds.</msg>
+<arg>3 Seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-24T10:10:55.542162" elapsed="3.001180"/>
+</kw>
+<kw name="Save" owner="Job_Advertisement_Keywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:10:58.543342" level="INFO">Clicking button 'name:save'.</msg>
+<arg>${save}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:10:58.543342" elapsed="2.172647"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:10:58.543342" elapsed="2.172647"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-24T10:11:05.718163" level="INFO">Slept 5 seconds.</msg>
+<arg>5 Seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-24T10:11:00.717128" elapsed="5.001035"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:10:54.054326" elapsed="11.664635"/>
+</test>
+<test id="s1-t9" name="More Job Information" line="126">
+<kw name="More Job Information" owner="Job_Advertisement_Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:05.718961" level="INFO">Clicking element 'link:More Job Information'.</msg>
+<arg>${tab_more_job_information}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:05.718961" elapsed="0.124794"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:11:05.718961" elapsed="0.124794"/>
+</kw>
+<kw name="Job Level" owner="Job_Advertisement_Keywords">
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:05.844761" level="INFO">Selecting options from selection list 'name:job_level' by label Top.</msg>
+<arg>${job_level}</arg>
+<arg>${arg_application_deadline}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-09-24T10:11:05.844761" elapsed="0.093247"/>
+</kw>
+<arg>Top</arg>
+<status status="PASS" start="2024-09-24T10:11:05.843755" elapsed="0.094253"/>
+</kw>
+<kw name="Job Context" owner="Job_Advertisement_Keywords">
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:05.939008" level="INFO">Selecting frame 'id:job_context_ifr'.</msg>
+<arg>${job_context_ifr}</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2024-09-24T10:11:05.939008" elapsed="0.039382"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:05.978390" level="INFO">Typing text 'Handicap International-Humanity &amp; Inclusion (HI) has been working' into text field 'id:tinymce'.</msg>
+<arg>${job_context_body}</arg>
+<arg>${arg_job_context}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:05.978390" elapsed="0.338391"/>
+</kw>
+<kw name="Unselect Frame" owner="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" start="2024-09-24T10:11:06.316781" elapsed="0.000000"/>
+</kw>
+<arg>Handicap International-Humanity &amp; Inclusion (HI) has been working</arg>
+<status status="PASS" start="2024-09-24T10:11:05.939008" elapsed="0.377773"/>
+</kw>
+<kw name="Job Responsibilities" owner="Job_Advertisement_Keywords">
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:06.316781" level="INFO">Selecting frame 'id:job_responsibility_ifr'.</msg>
+<arg>${job_responsibility_ifr}</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2024-09-24T10:11:06.316781" elapsed="0.032778"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:06.349559" level="INFO">Typing text 'Mission 1: Management' into text field 'id:tinymce'.</msg>
+<arg>${job_responsibility_body}</arg>
+<arg>${arg_job_responsibility}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:06.349559" elapsed="0.183611"/>
+</kw>
+<kw name="Unselect Frame" owner="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" start="2024-09-24T10:11:06.533170" elapsed="0.017086"/>
+</kw>
+<arg>Mission 1: Management</arg>
+<status status="PASS" start="2024-09-24T10:11:06.316781" elapsed="0.233475"/>
+</kw>
+<kw name="Workplace" owner="Job_Advertisement_Keywords">
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:06.550256" level="INFO">Selecting options from selection list 'id:workplace' by label Work from home.</msg>
+<arg>${workplace}</arg>
+<arg>${arg_workplace}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-09-24T10:11:06.550256" elapsed="0.095917"/>
+</kw>
+<arg>Work from home</arg>
+<status status="PASS" start="2024-09-24T10:11:06.550256" elapsed="0.095917"/>
+</kw>
+<kw name="Area" owner="Job_Advertisement_Keywords">
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:06.647182" level="INFO">Selecting options from selection list 'id:area_headquarters' by label Field.</msg>
+<arg>${area}</arg>
+<arg>${arg_area}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-09-24T10:11:06.647182" elapsed="0.085408"/>
+</kw>
+<arg>Field</arg>
+<status status="PASS" start="2024-09-24T10:11:06.647182" elapsed="0.085408"/>
+</kw>
+<kw name="Job Location" owner="Job_Advertisement_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:06.732590" level="INFO">Typing text 'Dhaka' into text field 'id:job_location'.</msg>
+<arg>${job_location}</arg>
+<arg>${arg_job_location}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:06.732590" elapsed="0.149096"/>
+</kw>
+<arg>Dhaka</arg>
+<status status="PASS" start="2024-09-24T10:11:06.732590" elapsed="0.149096"/>
+</kw>
+<kw name="Salary From" owner="Job_Advertisement_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:06.883645" level="INFO">Typing text '35000' into text field 'id:salary_from'.</msg>
+<arg>${salary_from}</arg>
+<arg>${arg_salary_from}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:06.882635" elapsed="0.149573"/>
+</kw>
+<arg>35000</arg>
+<status status="PASS" start="2024-09-24T10:11:06.882635" elapsed="0.149573"/>
+</kw>
+<kw name="Salary To" owner="Job_Advertisement_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:07.034222" level="INFO">Typing text '45000' into text field 'id:salary_to'.</msg>
+<arg>${salary_to}</arg>
+<arg>${arg_salary_to}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:07.032208" elapsed="0.133854"/>
+</kw>
+<arg>45000</arg>
+<status status="PASS" start="2024-09-24T10:11:07.032208" elapsed="0.133854"/>
+</kw>
+<kw name="Show Salary_More" owner="Job_Advertisement_Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:07.166062" level="INFO">Clicking element 'id:show_salary'.</msg>
+<arg>${show_salary_radio}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:07.166062" elapsed="0.066227"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:11:07.166062" elapsed="0.066227"/>
+</kw>
+<kw name="Additional Salary" owner="Job_Advertisement_Keywords">
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:07.232289" level="INFO">Selecting frame 'id:additional_salary_ifr'.</msg>
+<arg>${additional_salary_ifr}</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2024-09-24T10:11:07.232289" elapsed="0.049793"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:07.282082" level="INFO">Typing text 'A hardship allowance will be added to working in Cox's Bazar District only.' into text field 'id:tinymce'.</msg>
+<arg>${additional_salary_body}</arg>
+<arg>${arg_additional_salary}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:07.282082" elapsed="0.365823"/>
+</kw>
+<kw name="Unselect Frame" owner="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" start="2024-09-24T10:11:07.647905" elapsed="0.000000"/>
+</kw>
+<arg>A hardship allowance will be added to working in Cox's Bazar District only.</arg>
+<status status="PASS" start="2024-09-24T10:11:07.232289" elapsed="0.415616"/>
+</kw>
+<kw name="Festival Bonus" owner="Job_Advertisement_Keywords">
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:07.647905" level="INFO">Selecting checkbox 'id:inlineCheckbox-9'.</msg>
+<arg>${chk_Festival_Bonus}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:07.647905" elapsed="0.093029"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:11:07.647905" elapsed="0.094033"/>
+</kw>
+<kw name="Gratuity" owner="Job_Advertisement_Keywords">
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:07.742939" level="INFO">Selecting checkbox 'id:inlineCheckbox-4'.</msg>
+<arg>${chk_Gratuity}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:07.741938" elapsed="0.082940"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:11:07.741938" elapsed="0.082940"/>
+</kw>
+<kw name="Leave" owner="Job_Advertisement_Keywords">
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:07.824878" level="INFO">Selecting checkbox 'id:inlineCheckbox-8'.</msg>
+<arg>${chk_Leave}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:07.824878" elapsed="0.078370"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:11:07.824878" elapsed="0.078370"/>
+</kw>
+<kw name="Maternity Coverage" owner="Job_Advertisement_Keywords">
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:07.903248" level="INFO">Selecting checkbox 'id:inlineCheckbox-7'.</msg>
+<arg>${chk_Maternity_Coverage}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:07.903248" elapsed="0.079661"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:11:07.903248" elapsed="0.079661"/>
+</kw>
+<kw name="Medical Coverage" owner="Job_Advertisement_Keywords">
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:07.982909" level="INFO">Selecting checkbox 'id:inlineCheckbox-6'.</msg>
+<arg>${chk_Medical_Coverage}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:07.982909" elapsed="0.079823"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:11:07.982909" elapsed="0.079823"/>
+</kw>
+<kw name="Mobile Allowances" owner="Job_Advertisement_Keywords">
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:08.063865" level="INFO">Selecting checkbox 'id:inlineCheckbox-1'.</msg>
+<arg>${chk_Mobile_Allowances}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:08.063865" elapsed="0.070719"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:11:08.063865" elapsed="0.070719"/>
+</kw>
+<kw name="Per diem" owner="Job_Advertisement_Keywords">
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:08.134584" level="INFO">Selecting checkbox 'id:inlineCheckbox-2'.</msg>
+<arg>${chk_Per_diem}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:08.134584" elapsed="0.090705"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:11:08.134584" elapsed="0.090705"/>
+</kw>
+<kw name="Provident Fund" owner="Job_Advertisement_Keywords">
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:08.225289" level="INFO">Selecting checkbox 'id:inlineCheckbox-3'.</msg>
+<arg>${chk_Provident_Fund}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:08.225289" elapsed="0.072258"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:11:08.225289" elapsed="0.072258"/>
+</kw>
+<kw name="Staff Group Life Insurance" owner="Job_Advertisement_Keywords">
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:08.297547" level="INFO">Selecting checkbox 'id:inlineCheckbox-5'.</msg>
+<arg>${chk_Staff_Group_Life_Insurance}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:08.297547" elapsed="0.095549"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:11:08.297547" elapsed="0.095549"/>
+</kw>
+<kw name="Weekly Holiday" owner="Job_Advertisement_Keywords">
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:08.393096" level="INFO">Selecting checkbox 'id:inlineCheckbox-10'.</msg>
+<arg>${chk_Weekly_Holiday}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:08.393096" elapsed="0.089357"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:11:08.393096" elapsed="0.089357"/>
+</kw>
+<kw name="Other Benefits" owner="Job_Advertisement_Keywords">
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:08.482453" level="INFO">Selecting frame 'id:other_benefits_ifr'.</msg>
+<arg>${other_benefits_ifr}</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2024-09-24T10:11:08.482453" elapsed="0.048922"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:08.531375" level="INFO">Typing text 'Staff will get sick leave, annual leave, casual leave, medical leave, and event leave as per HI policy.' into text field 'id:tinymce'.</msg>
+<arg>${other_benefits_body}</arg>
+<arg>${arg_other_benefits}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:08.531375" elapsed="0.465562"/>
+</kw>
+<kw name="Unselect Frame" owner="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" start="2024-09-24T10:11:08.996937" elapsed="0.000000"/>
+</kw>
+<arg>Staff will get sick leave, annual leave, casual leave, medical leave, and event leave as per HI policy.</arg>
+<status status="PASS" start="2024-09-24T10:11:08.482453" elapsed="0.514484"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>link:Handicap International</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-09-24T10:11:08.996937" elapsed="0.304569"/>
+</kw>
+<kw name="Save_More_Info" owner="Job_Advertisement_Keywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:09.302509" level="INFO">Clicking button 'xpath:(//button[@name='save_and_update'][normalize-space()='Save and Continue'])[2]'.</msg>
+<arg>${save_more}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:09.302509" elapsed="2.308562"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:11:09.302509" elapsed="2.309595"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:11:05.718961" elapsed="5.895216"/>
+</test>
+<test id="s1-t10" name="Candidate Requirements" line="151">
+<kw name="Candidate Requirements" owner="Job_Advertisement_Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:11.618333" level="INFO">Clicking element 'link:Candidate Requirements'.</msg>
+<arg>${tab_candidate_requirements}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:11.618333" elapsed="0.139892"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:11:11.618333" elapsed="0.140895"/>
+</kw>
+<kw name="Educational Qualification" owner="Job_Advertisement_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:11.761704" level="INFO">Typing text 'Test Educational Qualification' into text field 'id:educational_qualification'.</msg>
+<arg>${educational_qualification}</arg>
+<arg>${arg_educational_qualification}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:11.760227" elapsed="0.219490"/>
+</kw>
+<arg>Test Educational Qualification</arg>
+<status status="PASS" start="2024-09-24T10:11:11.760227" elapsed="0.219963"/>
+</kw>
+<kw name="Training/Trade Course" owner="Job_Advertisement_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:11.981427" level="INFO">Typing text 'Test Training/Trade Course' into text field 'id:training_course'.</msg>
+<arg>${training_course}</arg>
+<arg>${arg_training_course}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:11.980381" elapsed="0.199161"/>
+</kw>
+<arg>Test Training/Trade Course</arg>
+<status status="PASS" start="2024-09-24T10:11:11.980381" elapsed="0.199161"/>
+</kw>
+<kw name="Professional Certification" owner="Job_Advertisement_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:12.180545" level="INFO">Typing text 'Test Professional Certification' into text field 'id:professional_certification'.</msg>
+<arg>${professional_certification}</arg>
+<arg>${arg_professional_certification}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:12.180545" elapsed="0.212339"/>
+</kw>
+<arg>Test Professional Certification</arg>
+<status status="PASS" start="2024-09-24T10:11:12.179542" elapsed="0.213342"/>
+</kw>
+<kw name="Experience" owner="Job_Advertisement_Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:12.394673" level="INFO">Clicking element 'id:is_experience_required2'.</msg>
+<arg>${experience_status_radio}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:12.394673" elapsed="0.066666"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:11:12.393923" elapsed="0.067416"/>
+</kw>
+<kw name="Minimum year of experience" owner="Job_Advertisement_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:12.461339" level="INFO">Typing text '1' into text field 'id:min_experience'.</msg>
+<arg>${min_experience}</arg>
+<arg>${arg_min_experience}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:12.461339" elapsed="0.101249"/>
+</kw>
+<arg>1</arg>
+<status status="PASS" start="2024-09-24T10:11:12.461339" elapsed="0.101249"/>
+</kw>
+<kw name="Maximum year of experience" owner="Job_Advertisement_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:12.562588" level="INFO">Typing text '3' into text field 'id:max_experience'.</msg>
+<arg>${max_experience}</arg>
+<arg>${arg_max_experience}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:12.562588" elapsed="0.099034"/>
+</kw>
+<arg>3</arg>
+<status status="PASS" start="2024-09-24T10:11:12.562588" elapsed="0.099034"/>
+</kw>
+<kw name="Freshers" owner="Job_Advertisement_Keywords">
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:12.661622" level="INFO">Selecting checkbox 'id:is_fresher_apply'.</msg>
+<arg>${chk_is_fresher_apply}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:12.661622" elapsed="0.093231"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:11:12.661622" elapsed="0.093231"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${min_age}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-09-24T10:11:12.754853" elapsed="0.306881"/>
+</kw>
+<kw name="Area of Expertise" owner="Job_Advertisement_Keywords">
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:13.061734" level="INFO">Selecting options from selection list 'id:expertise' by label HR Analytics.</msg>
+<arg>${expertise}</arg>
+<arg>${arg_expertise}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-09-24T10:11:13.061734" elapsed="0.142437"/>
+</kw>
+<arg>HR Analytics</arg>
+<status status="PASS" start="2024-09-24T10:11:13.061734" elapsed="0.142437"/>
+</kw>
+<kw name="Skills" owner="Job_Advertisement_Keywords">
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:13.204171" level="INFO">Selecting options from selection list 'id:skills' by label Communication.</msg>
+<arg>${skills}</arg>
+<arg>${arg_skills}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-09-24T10:11:13.204171" elapsed="0.108479"/>
+</kw>
+<arg>Communication</arg>
+<status status="PASS" start="2024-09-24T10:11:13.204171" elapsed="0.108479"/>
+</kw>
+<kw name="Additional Requirements" owner="Job_Advertisement_Keywords">
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:13.312650" level="INFO">Selecting frame 'id:additional_requirements_ifr'.</msg>
+<arg>${additional_requirements_ifr}</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2024-09-24T10:11:13.312650" elapsed="0.031254"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:13.343904" level="INFO">Typing text 'Test Additional Requirements' into text field 'id:tinymce'.</msg>
+<arg>${additional_requirements_body}</arg>
+<arg>${arg_additional_requirements}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:13.343904" elapsed="0.216096"/>
+</kw>
+<kw name="Unselect Frame" owner="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" start="2024-09-24T10:11:13.560000" elapsed="0.000000"/>
+</kw>
+<arg>Test Additional Requirements</arg>
+<status status="PASS" start="2024-09-24T10:11:13.312650" elapsed="0.247350"/>
+</kw>
+<kw name="Gender" owner="Job_Advertisement_Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:13.560000" level="INFO">Clicking element 'id:Male'.</msg>
+<arg>${gender_radio}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:13.560000" elapsed="0.068583"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:11:13.560000" elapsed="0.068583"/>
+</kw>
+<kw name="Minimum age" owner="Job_Advertisement_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:13.629623" level="INFO">Typing text '25' into text field 'id:min_age'.</msg>
+<arg>${min_age}</arg>
+<arg>${arg_min_age}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:13.629623" elapsed="0.096903"/>
+</kw>
+<arg>25</arg>
+<status status="PASS" start="2024-09-24T10:11:13.629623" elapsed="0.096903"/>
+</kw>
+<kw name="Maximum age" owner="Job_Advertisement_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:13.726526" level="INFO">Typing text '35' into text field 'id:max_age'.</msg>
+<arg>${max_age}</arg>
+<arg>${arg_max_age}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:13.726526" elapsed="0.116882"/>
+</kw>
+<arg>35</arg>
+<status status="PASS" start="2024-09-24T10:11:13.726526" elapsed="0.116882"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-24T10:11:16.843709" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-24T10:11:13.843408" elapsed="3.000301"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>link:Handicap International</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-09-24T10:11:16.843709" elapsed="0.299804"/>
+</kw>
+<kw name="Save_Candidate" owner="Job_Advertisement_Keywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:17.144511" level="INFO">Clicking button 'xpath:(//button[@name='save_and_update'][normalize-space()='Save and Continue'])[3]'.</msg>
+<arg>${save_continue_candidate}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:17.144511" elapsed="2.468526"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:11:17.144511" elapsed="2.475172"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:11:11.618333" elapsed="8.003402"/>
+</test>
+<test id="s1-t11" name="Minimize Irrelevant Application" line="171">
+<kw name="Minimize Irrelevant Application" owner="Job_Advertisement_Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:19.630726" level="INFO">Clicking element 'link:Minimize Irrelevant Application'.</msg>
+<arg>${tab_minimize_irrelevant_application}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:19.629738" elapsed="0.138958"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:11:19.628716" elapsed="0.140985"/>
+</kw>
+<kw name="Age_Minimize" owner="Job_Advertisement_Keywords">
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:19.773396" level="INFO">Selecting checkbox 'id:age_enabled'.</msg>
+<arg>${chk_age_enabled}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:19.772397" elapsed="0.099490"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:11:19.772397" elapsed="0.099490"/>
+</kw>
+<kw name="Total Years of Experience" owner="Job_Advertisement_Keywords">
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:19.871887" level="INFO">Selecting checkbox 'id:experience_enabled'.</msg>
+<arg>${chk_experience_enabled}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:19.871887" elapsed="0.081538"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:11:19.871887" elapsed="0.081538"/>
+</kw>
+<kw name="Gender_Minimize" owner="Job_Advertisement_Keywords">
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:19.953425" level="INFO">Selecting checkbox 'id:gender_enabled'.</msg>
+<arg>${chk_gender_enabled}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:19.953425" elapsed="0.099876"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:11:19.953425" elapsed="0.099876"/>
+</kw>
+<kw name="Salary_Minimize" owner="Job_Advertisement_Keywords">
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:20.053301" level="INFO">Selecting checkbox 'id:salary_enabled'.</msg>
+<arg>${chk_salary_enabled}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:20.053301" elapsed="0.089060"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:11:20.053301" elapsed="0.089060"/>
+</kw>
+<kw name="Job Level_Minimize" owner="Job_Advertisement_Keywords">
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:20.142361" level="INFO">Selecting checkbox 'id:job_level_enabled'.</msg>
+<arg>${chk_job_level_enabled}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:20.142361" elapsed="0.088673"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:11:20.142361" elapsed="0.088673"/>
+</kw>
+<kw name="Job Category_Minimize" owner="Job_Advertisement_Keywords">
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:20.231034" level="INFO">Selecting checkbox 'id:job_category_enabled'.</msg>
+<arg>${chk_job_category_enabled}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:20.231034" elapsed="0.087370"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:11:20.231034" elapsed="0.087370"/>
+</kw>
+<kw name="Job Type_Minimize" owner="Job_Advertisement_Keywords">
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:20.319413" level="INFO">Selecting checkbox 'id:job_type_enabled'.</msg>
+<arg>${chk_job_type_enabled}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:20.319413" elapsed="0.086322"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:11:20.319413" elapsed="0.086322"/>
+</kw>
+<kw name="Role Type_Minimize" owner="Job_Advertisement_Keywords">
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:20.405735" level="INFO">Selecting checkbox 'id:role_enabled'.</msg>
+<arg>${chk_role_enabled}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:20.405735" elapsed="0.089126"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:11:20.405735" elapsed="0.089126"/>
+</kw>
+<kw name="Area_Minimize" owner="Job_Advertisement_Keywords">
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:20.494861" level="INFO">Selecting checkbox 'id:headquarter_enabled'.</msg>
+<arg>${chk_headquarter_enabled}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:20.494861" elapsed="0.091129"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:11:20.494861" elapsed="0.091129"/>
+</kw>
+<kw name="Area of Expertise_Minimize" owner="Job_Advertisement_Keywords">
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:20.585990" level="INFO">Selecting checkbox 'id:expertise_enabled'.</msg>
+<arg>${chk_expertise_enabled}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:20.585990" elapsed="0.084120"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:11:20.585990" elapsed="0.084120"/>
+</kw>
+<kw name="Skills_Minimize" owner="Job_Advertisement_Keywords">
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:20.670110" level="INFO">Selecting checkbox 'id:skill_enabled'.</msg>
+<arg>${chk_skill_enabled}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:20.670110" elapsed="0.088269"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:11:20.670110" elapsed="0.088269"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-24T10:11:23.759045" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-24T10:11:20.758379" elapsed="3.000666"/>
+</kw>
+<kw name="Save_Minimize" owner="Job_Advertisement_Keywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:23.759045" level="INFO">Clicking button 'xpath:(//button[@name='save_and_update'][normalize-space()='Save and Continue'])[4]'.</msg>
+<arg>${save_continue_minimize}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:23.759045" elapsed="2.324027"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:11:23.759045" elapsed="2.324027"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:11:19.625738" elapsed="6.459330"/>
+</test>
+<test id="s1-t12" name="Preview" line="187">
+<kw name="Preview" owner="Job_Advertisement_Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:26.087798" level="INFO">Clicking element 'link:Preview'.</msg>
+<arg>${tab_preview}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:26.087798" elapsed="0.119985"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:11:26.087798" elapsed="0.119985"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>link:Handicap International</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-09-24T10:11:26.222623" elapsed="0.317276"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-24T10:11:29.542872" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-24T10:11:26.541898" elapsed="3.000974"/>
+</kw>
+<kw name="Save_Preview" owner="Job_Advertisement_Keywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:29.544655" level="INFO">Clicking button 'xpath:(//button[contains(@name,'save_and_update')][normalize-space()='Save and Continue'])[5]'.</msg>
+<arg>${save_continue_preview}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:29.544655" elapsed="2.238160"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:11:29.544655" elapsed="2.238160"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:11:26.087798" elapsed="5.695017"/>
+</test>
+<test id="s1-t13" name="Criteria" line="193">
+<kw name="Click Job" owner="Job_Advertisement_Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:31.795131" level="INFO">Clicking element 'link:Job'.</msg>
+<arg>${job}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:31.794127" elapsed="0.142755"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:11:31.793136" elapsed="0.143746"/>
+</kw>
+<kw name="Click Job Advertisement" owner="Job_Advertisement_Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:31.951371" level="INFO">Clicking element 'link:Job Advertisement'.</msg>
+<arg>${nav_job_adv}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:31.950373" elapsed="1.176355"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:11:31.950373" elapsed="1.176848"/>
+</kw>
+<kw name="Click Criteria" owner="Job_Advertisement_Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:33.127221" level="INFO">Clicking element 'xpath:(//i[@class='fa fa fa-plus'])[1]'.</msg>
+<arg>${job_criteria}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:33.127221" elapsed="1.074962"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:11:33.127221" elapsed="1.074962"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-24T10:11:39.204847" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-24T10:11:34.203201" elapsed="5.001646"/>
+</kw>
+<kw name="Criteria 1" owner="Job_Advertisement_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:39.204847" level="INFO">Typing text 'Technical Interview full automation' into text field 'xpath:(//textarea[@id='criteria'])[1]'.</msg>
+<arg>${txt_criteria_1}</arg>
+<arg>${arg_criteria_1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:39.204847" elapsed="0.244879"/>
+</kw>
+<arg>Technical Interview full automation</arg>
+<status status="PASS" start="2024-09-24T10:11:39.204847" elapsed="0.244879"/>
+</kw>
+<kw name="Point 1" owner="Job_Advertisement_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:39.451416" level="INFO">Typing text '5' into text field 'xpath:(//input[@name='point[]'])[1]'.</msg>
+<arg>${txt_point_1}</arg>
+<arg>${arg_point_1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:39.451416" elapsed="0.083732"/>
+</kw>
+<arg>5</arg>
+<status status="PASS" start="2024-09-24T10:11:39.450738" elapsed="0.084410"/>
+</kw>
+<kw name="Status 1" owner="Job_Advertisement_Keywords">
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:39.535148" level="INFO">Selecting options from selection list 'xpath:(//select[@name='status[]'])[1]' by label Mandatory.</msg>
+<arg>${criteria_status_1}</arg>
+<arg>${arg_criteria_status_1}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-09-24T10:11:39.535148" elapsed="0.083030"/>
+</kw>
+<arg>Mandatory</arg>
+<status status="PASS" start="2024-09-24T10:11:39.535148" elapsed="0.083030"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-24T10:11:41.633456" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-24T10:11:39.633188" elapsed="2.000268"/>
+</kw>
+<kw name="Add Row" owner="Job_Advertisement_Keywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:41.633456" level="INFO">Clicking button 'id:add-row-btn'.</msg>
+<arg>${btn_add_row}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:41.633456" elapsed="0.080019"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:11:41.633456" elapsed="0.080730"/>
+</kw>
+<kw name="Criteria 2" owner="Job_Advertisement_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:41.716277" level="INFO">Typing text 'Written Exam full automation' into text field 'xpath:(//textarea[@id='criteria'])[2]'.</msg>
+<arg>${txt_criteria_2}</arg>
+<arg>${arg_criteria_2}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:41.716277" elapsed="0.216222"/>
+</kw>
+<arg>Written Exam full automation</arg>
+<status status="PASS" start="2024-09-24T10:11:41.715200" elapsed="0.217299"/>
+</kw>
+<kw name="Point 2" owner="Job_Advertisement_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:41.932499" level="INFO">Typing text '3' into text field 'xpath:(//input[@name='point[]'])[2]'.</msg>
+<arg>${txt_point_2}</arg>
+<arg>${arg_point_2}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:41.932499" elapsed="0.083000"/>
+</kw>
+<arg>3</arg>
+<status status="PASS" start="2024-09-24T10:11:41.932499" elapsed="0.083000"/>
+</kw>
+<kw name="Status 2" owner="Job_Advertisement_Keywords">
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:42.015499" level="INFO">Selecting options from selection list 'xpath:(//select[@name='status[]'])[2]' by label Mandatory.</msg>
+<arg>${criteria_status_2}</arg>
+<arg>${arg_criteria_status_2}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-09-24T10:11:42.015499" elapsed="0.067007"/>
+</kw>
+<arg>Mandatory</arg>
+<status status="PASS" start="2024-09-24T10:11:42.015499" elapsed="0.067007"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-24T10:11:44.083191" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-24T10:11:42.082506" elapsed="2.001328"/>
+</kw>
+<kw name="Add Row" owner="Job_Advertisement_Keywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:44.083834" level="INFO">Clicking button 'id:add-row-btn'.</msg>
+<arg>${btn_add_row}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:44.083834" elapsed="0.116984"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:11:44.083834" elapsed="0.116984"/>
+</kw>
+<kw name="Criteria 3" owner="Job_Advertisement_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:44.200818" level="INFO">Typing text 'HR Interview full automation' into text field 'xpath:(//textarea[@id='criteria'])[3]'.</msg>
+<arg>${txt_criteria_3}</arg>
+<arg>${arg_criteria_3}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:44.200818" elapsed="0.198307"/>
+</kw>
+<arg>HR Interview full automation</arg>
+<status status="PASS" start="2024-09-24T10:11:44.200818" elapsed="0.198307"/>
+</kw>
+<kw name="Point 3" owner="Job_Advertisement_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:44.399125" level="INFO">Typing text '2' into text field 'xpath:(//input[@name='point[]'])[3]'.</msg>
+<arg>${txt_point_3}</arg>
+<arg>${arg_point_3}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:44.399125" elapsed="0.097886"/>
+</kw>
+<arg>2</arg>
+<status status="PASS" start="2024-09-24T10:11:44.399125" elapsed="0.097886"/>
+</kw>
+<kw name="Status 3" owner="Job_Advertisement_Keywords">
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:44.497011" level="INFO">Selecting options from selection list 'xpath:(//select[@name='status[]'])[3]' by label Optional.</msg>
+<arg>${criteria_status_3}</arg>
+<arg>${arg_criteria_status_3}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-09-24T10:11:44.497011" elapsed="0.087620"/>
+</kw>
+<arg>Optional</arg>
+<status status="PASS" start="2024-09-24T10:11:44.497011" elapsed="0.087620"/>
+</kw>
+<kw name="Save_Criteria" owner="Job_Advertisement_Keywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:44.584631" level="INFO">Clicking button 'name:save'.</msg>
+<arg>${btn_save}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:44.584631" elapsed="2.134957"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:11:44.584631" elapsed="2.141868"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-24T10:11:49.729392" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-24T10:11:46.728555" elapsed="3.000837"/>
+</kw>
+<kw name="Submission Check" owner="Recruitment_Request_Keywords">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:49.790498" level="INFO">Current page contains text 'Job Advertisement List'.</msg>
+<arg>${arg_submission_check}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-09-24T10:11:49.729392" elapsed="0.061106"/>
+</kw>
+<arg>Job Advertisement List</arg>
+<status status="PASS" start="2024-09-24T10:11:49.729392" elapsed="0.061106"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:11:31.791097" elapsed="17.999401"/>
+</test>
+<test id="s1-t14" name="Job Restriction" line="215">
+<kw name="Click Job Restriction" owner="Job_Advertisement_Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:49.790498" level="INFO">Clicking element 'link:Job Restriction'.</msg>
+<arg>${nav_job_restriction}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:49.790498" elapsed="1.393452"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:11:49.790498" elapsed="1.393452"/>
+</kw>
+<kw name="Click Add New" owner="Job_Advertisement_Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:51.192440" level="INFO">Clicking element 'link:Add New'.</msg>
+<arg>${add_new}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:51.191499" elapsed="1.162837"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:11:51.190412" elapsed="1.164921"/>
+</kw>
+<kw name="Job Request Id - Restriction" owner="Job_Advertisement_Keywords">
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:52.358278" level="INFO">Selecting options from selection list 'id:recruitment_id' by label 1148.</msg>
+<arg>${job_request_id_restriction}</arg>
+<arg>${arg_job_request_id_restriction}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-09-24T10:11:52.358076" elapsed="0.116708"/>
+</kw>
+<arg>1148</arg>
+<status status="PASS" start="2024-09-24T10:11:52.356324" elapsed="0.119377"/>
+</kw>
+<kw name="Question 1" owner="Job_Advertisement_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:52.476024" level="INFO">Typing text 'Test Question 1' into text field 'id:question1'.</msg>
+<arg>${question1}</arg>
+<arg>${arg_question1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:52.476024" elapsed="0.166192"/>
+</kw>
+<arg>Test Question 1</arg>
+<status status="PASS" start="2024-09-24T10:11:52.476024" elapsed="0.166192"/>
+</kw>
+<kw name="Question 2" owner="Job_Advertisement_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:52.642216" level="INFO">Typing text 'Test Question 2' into text field 'id:question2'.</msg>
+<arg>${question2}</arg>
+<arg>${arg_question2}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:52.642216" elapsed="0.166928"/>
+</kw>
+<arg>Test Question 2</arg>
+<status status="PASS" start="2024-09-24T10:11:52.642216" elapsed="0.166928"/>
+</kw>
+<kw name="Question 3" owner="Job_Advertisement_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:52.809144" level="INFO">Typing text 'Test Question 3' into text field 'id:question3'.</msg>
+<arg>${question3}</arg>
+<arg>${arg_question3}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:52.809144" elapsed="0.145885"/>
+</kw>
+<arg>Test Question 3</arg>
+<status status="PASS" start="2024-09-24T10:11:52.809144" elapsed="0.145885"/>
+</kw>
+<kw name="Question 4" owner="Job_Advertisement_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:52.955029" level="INFO">Typing text 'Test Question 4' into text field 'id:question4'.</msg>
+<arg>${question4}</arg>
+<arg>${arg_question4}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:52.955029" elapsed="0.154284"/>
+</kw>
+<arg>Test Question 4</arg>
+<status status="PASS" start="2024-09-24T10:11:52.955029" elapsed="0.154284"/>
+</kw>
+<kw name="Question 5" owner="Job_Advertisement_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:53.109313" level="INFO">Typing text 'Test Question 5' into text field 'id:question5'.</msg>
+<arg>${question5}</arg>
+<arg>${arg_question5}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:53.109313" elapsed="0.184451"/>
+</kw>
+<arg>Test Question 5</arg>
+<status status="PASS" start="2024-09-24T10:11:53.109313" elapsed="0.184451"/>
+</kw>
+<kw name="Question 6" owner="Job_Advertisement_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:53.293764" level="INFO">Typing text 'Test Question 6' into text field 'id:question6'.</msg>
+<arg>${question6}</arg>
+<arg>${arg_question6}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:53.293764" elapsed="0.143969"/>
+</kw>
+<arg>Test Question 6</arg>
+<status status="PASS" start="2024-09-24T10:11:53.293764" elapsed="0.143969"/>
+</kw>
+<kw name="Question 7" owner="Job_Advertisement_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:53.437733" level="INFO">Typing text 'Test Question 7' into text field 'id:question7'.</msg>
+<arg>${question7}</arg>
+<arg>${arg_question7}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:53.437733" elapsed="0.150314"/>
+</kw>
+<arg>Test Question 7</arg>
+<status status="PASS" start="2024-09-24T10:11:53.437733" elapsed="0.150314"/>
+</kw>
+<kw name="Question 8" owner="Job_Advertisement_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:53.588047" level="INFO">Typing text 'Test Question 8' into text field 'id:question8'.</msg>
+<arg>${question8}</arg>
+<arg>${arg_question8}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:53.588047" elapsed="0.133617"/>
+</kw>
+<arg>Test Question 8</arg>
+<status status="PASS" start="2024-09-24T10:11:53.588047" elapsed="0.133617"/>
+</kw>
+<kw name="Question 9" owner="Job_Advertisement_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:53.736767" level="INFO">Typing text 'Test Question 9' into text field 'id:question9'.</msg>
+<arg>${question9}</arg>
+<arg>${arg_question9}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:53.735757" elapsed="0.135229"/>
+</kw>
+<arg>Test Question 9</arg>
+<status status="PASS" start="2024-09-24T10:11:53.735757" elapsed="0.135229"/>
+</kw>
+<kw name="Question 10" owner="Job_Advertisement_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:53.870986" level="INFO">Typing text 'Test Question 10' into text field 'id:question10'.</msg>
+<arg>${question10}</arg>
+<arg>${arg_question10}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:53.870986" elapsed="0.149797"/>
+</kw>
+<arg>Test Question 10</arg>
+<status status="PASS" start="2024-09-24T10:11:53.870986" elapsed="0.149797"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-24T10:11:57.035966" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-24T10:11:54.020783" elapsed="3.015183"/>
+</kw>
+<kw name="Save_Continue_Restriction" owner="Job_Advertisement_Keywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:11:57.035966" level="INFO">Clicking button 'xpath:(//button[normalize-space()='Save and Continue'])[1]'.</msg>
+<arg>${Save_continue_restriction}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:11:57.035966" elapsed="2.046648"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:11:57.035966" elapsed="2.046648"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-24T10:12:02.082692" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-24T10:11:59.082614" elapsed="3.000078"/>
+</kw>
+<kw name="Submission Check" owner="Recruitment_Request_Keywords">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:12:02.094761" level="INFO">Current page contains text 'Job Restriction Question List'.</msg>
+<arg>${arg_submission_check}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-09-24T10:12:02.082692" elapsed="0.012069"/>
+</kw>
+<arg>Job Restriction Question List</arg>
+<status status="PASS" start="2024-09-24T10:12:02.082692" elapsed="0.012069"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:11:49.790498" elapsed="12.304263"/>
+</test>
+<test id="s1-t15" name="Job Publish" line="235">
+<kw name="Click Job Advertisement" owner="Job_Advertisement_Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-24T10:12:02.094761" level="INFO">Clicking element 'link:Job Advertisement'.</msg>
+<arg>${nav_job_adv}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T10:12:02.094761" elapsed="1.261633"/>
+</kw>
+<status status="PASS" start="2024-09-24T10:12:02.094761" elapsed="1.261633"/>
 </kw>
 <kw name="Click Job Publish" owner="Job_Advertisement_Keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-09-15T22:33:50.307221" level="INFO">Clicking element 'xpath:(//a[@class='btn btn-warning btn-sm1 status'])[1]'.</msg>
+<msg time="2024-09-24T10:12:03.356394" level="INFO">Clicking element 'xpath:(//a[@class='btn btn-warning btn-sm1 status'])[1]'.</msg>
 <arg>${job_publish}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-15T22:33:50.307221" elapsed="0.068215"/>
+<status status="PASS" start="2024-09-24T10:12:03.356394" elapsed="0.071332"/>
 </kw>
-<status status="PASS" start="2024-09-15T22:33:50.307221" elapsed="0.068215"/>
+<status status="PASS" start="2024-09-24T10:12:03.356394" elapsed="0.071332"/>
 </kw>
-<status status="PASS" start="2024-09-15T22:33:48.269129" elapsed="2.107176"/>
+<status status="PASS" start="2024-09-24T10:12:02.094761" elapsed="1.333963"/>
 </test>
-<status status="PASS" start="2024-09-15T22:33:04.629756" elapsed="45.749587"/>
+<status status="PASS" start="2024-09-24T10:09:12.628046" elapsed="170.802045"/>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="0" skip="0">All Tests</stat>
+<stat pass="15" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="3" fail="0" skip="0" id="s1" name="Job Publish">Job Publish</stat>
+<stat pass="15" fail="0" skip="0" id="s1" name="Job Publish">Job Publish</stat>
 </suite>
 </statistics>
 <errors>
+<msg time="2024-09-24T10:09:16.516896" level="WARN">The chromedriver version (128.0.6613.84) detected in PATH at C:\Users\shah.newaj\AppData\Local\Programs\Python\Python311\Scripts\chromedriver.exe might not be compatible with the detected chrome version (129.0.6668.59); currently, chromedriver 129.0.6668.58 is recommended for chrome 129.*, so it is advised to delete the driver in PATH and retry</msg>
 </errors>
 </robot>
